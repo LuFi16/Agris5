@@ -1,0 +1,34 @@
+.c-nav-side {                       // JUST FOR TESTING
+  background: sandybrown;           // JUST FOR TESTING
+}                                   // JUST FOR TESTING
+
+
+///// MOBILE /////
+
+.c-nav-side{
+  li{
+    list-style-type: none;
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+.c-nav-side__link-header{
+  color: $color-text;
+}
+
+.c-nav-side__link{
+  display: none;      // hidden for mobile version
+  color: $color-text;
+}
+
+.c-nav-side__link-indexed{
+  color: $color-agris-green;
+}
+
+.c-nav-side__link-more{
+  color: $color-agris-green;
+  border: 1px solid $color-agris-green;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}

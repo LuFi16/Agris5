@@ -1,0 +1,27 @@
+.c-nav-up {                   // JUST FOR TESTING
+  background: saddlebrown;    // JUST FOR TESTING
+}                             // JUST FOR TESTING
+
+
+///// MOBILE /////
+
+.c-nav-up{
+  width: 100%;  //should be col-mobile-12 etc.
+  display: inline-block;
+}
+
+.c-nav-up__text{
+  display: none;      // hidden for mobile version
+      li{
+        list-style-type: none;
+        a{
+          text-decoration: none;
+          color: $color-text;
+        }
+      }
+}
+
+.c-nav-up__logo{
+        list-style-type: none;
+}
+

@@ -1,0 +1,41 @@
+main > header {                  // JUST FOR TESTING
+  background: darkblue;     // JUST FOR TESTING
+}                         // JUST FOR TESTING
+
+
+///// MOBILE /////
+
+.c-header-introduction{
+  padding: 5rem;
+  text-align: center;
+  color: $color-introduction;
+
+}
+
+.c-header-introduction__text{
+  display: none;     // hidden for mobile version
+}
+
+.c-header-introduction__about{
+  text-decoration: none;
+  color: $color-agris-green;
+  border: 1px solid $color-agris-green;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.c-header-introduction__issn{
+  border: 1px solid $color-introduction;
+  padding: 0.5rem;
+  margin: auto;  //align to center
+  width: 20%;  //should be col-mobile-12 etc.
+}
+
+.c-header-introduction__more_info{
+  background: $color-introduction;
+  color: $color-text;
+  padding: 1rem;
+  width: 55%;  //should be col-mobile-12 etc.
+  margin: auto;  //align to center
+}

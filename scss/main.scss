@@ -1,0 +1,77 @@
+
+// SETTINGS
+@import "settings.config";
+
+$inuit-global-spacing-unit-factor-tiny: 0.35;
+$inuit-global-spacing-unit-factor-large: 1.75;
+$inuit-global-spacing-unit-factor-huge: 3.5;
+@import "../bower_components/inuitcss/settings/settings.core";
+@import "settings.global";
+
+// TOOLS
+@import "../bower_components/inuitcss/tools/tools.rem";
+@import "../bower_components/inuitcss/tools/tools.font-size";
+@import "../bower_components/inuitcss/tools/tools.clearfix";
+@import "../bower_components/inuitcss/tools/tools.hidden";
+$mq-breakpoints: (
+        mobile: $mobile,
+        tablet: $tablet,
+        desktop: $desktop,
+        wide: $wide);
+@import "../bower_components/sass-mq/mq";
+
+// GENERIC
+@import "../bower_components/inuitcss/generic/generic.box-sizing";
+@import "../bower_components/inuitcss/generic/generic.normalize";
+@import "../bower_components/inuitcss/generic/generic.reset";
+@import "../bower_components/inuitcss/generic/generic.shared";
+
+// ELEMENTS
+@import "../bower_components/inuitcss/elements/elements.page";
+@import "../bower_components/inuitcss/elements/elements.headings";
+@import "../bower_components/inuitcss/elements/elements.images";
+@import "../bower_components/inuitcss/elements/elements.tables";
+
+// OBJECTS
+//
+// Uncomment and add to this section as necessary.
+//@import "../bower_components/inuitcss/objects/objects.wrapper";
+//@import "../bower_components/inuitcss/objects/objects.layout";
+@import "../bower_components/inuitcss/objects/objects.media";
+//@import "../bower_components/inuitcss/objects/objects.flag";
+@import "../bower_components/inuitcss/objects/objects.list-bare";
+//@import "../bower_components/inuitcss/objects/objects.list-inline";
+//@import "../bower_components/inuitcss/objects/objects.box";
+@import "../bower_components/inuitcss/objects/objects.block";
+//@import "../bower_components/inuitcss/objects/objects.pack";
+//@import "../bower_components/inuitcss/objects/objects.ratio";
+//@import "../bower_components/inuitcss/objects/objects.crop";
+//@import "../bower_components/inuitcss/objects/objects.tables";
+//@import "../bower_components/inuitcss/objects/objects.pack";
+
+@import "../bower_components/flexboxgrid-sass/flexboxgrid";
+
+// UTILITIES
+@import "../bower_components/inuitcss/utilities/utilities.clearfix";
+//@import "../bower_components/inuitcss/utilities/utilities.widths";
+@import "../bower_components/inuitcss/utilities/utilities.headings";
+@import "../bower_components/inuitcss/utilities/utilities.spacing";
+//@import "../bower_components/inuitcss/utilities/utilities.print";
+@import "../bower_components/inuitcss/utilities/utilities.hide";
+
+
+// FONTS
+$lato-path: "../bower_components/lato-fontface/fonts"; // should be included only used ones in implementation
+@import "../bower_components/lato-fontface/scss/lato"; // should be included only used ones in implementation
+
+
+
+
+// COMPONENTS
+@import "components/components.colors";
+
+@import "components/components.articles";
+@import "components/components.footer";
+@import "components/components.header";
+@import "components/components.nav-side";
+@import "components/components.nav-up";
