@@ -12,6 +12,9 @@
       text-decoration: none;
     }
   }
+  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
 }
 
 .c-nav-side__link-header{
@@ -31,4 +34,16 @@
   color: $color-agris-green;
   border: 1px solid $color-agris-green;
   padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.c-nav-side_ul{
+  align-items: center;
+
+}
+
+.c-nav-side__indexed-block{
+  border-top: 1px solid $color-nav-side-line;
+  padding-top: 1rem;
+  align-items: center;
+  //justify-items: end;   //doesn't work
 }

@@ -6,8 +6,8 @@
 ///// MOBILE /////
 
 .c-nav-up{
-  width: 100%;  //should be col-mobile-12 etc.
-  display: inline-block;
+  width: 100%;
+
 }
 
 .c-nav-up__text{
@@ -22,6 +22,9 @@
 }
 
 .c-nav-up__logo{
-        list-style-type: none;
+  list-style-type: none;
 }
 
+.c-nav-up__ul{
+
+}

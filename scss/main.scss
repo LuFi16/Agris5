@@ -9,7 +9,7 @@ $inuit-global-spacing-unit-factor-huge: 3.5;
 @import "settings.global";
 
 // TOOLS
-@import "../bower_components/inuitcss/tools/tools.rem";
+//@import "../bower_components/inuitcss/tools/tools.rem";
 @import "../bower_components/inuitcss/tools/tools.font-size";
 @import "../bower_components/inuitcss/tools/tools.clearfix";
 @import "../bower_components/inuitcss/tools/tools.hidden";
@@ -55,14 +55,14 @@ $mq-breakpoints: (
 @import "../bower_components/inuitcss/utilities/utilities.clearfix";
 //@import "../bower_components/inuitcss/utilities/utilities.widths";
 @import "../bower_components/inuitcss/utilities/utilities.headings";
-@import "../bower_components/inuitcss/utilities/utilities.spacing";
+//@import "../bower_components/inuitcss/utilities/utilities.spacing";
 //@import "../bower_components/inuitcss/utilities/utilities.print";
 @import "../bower_components/inuitcss/utilities/utilities.hide";
 
 
 // FONTS
-$lato-path: "../bower_components/lato-fontface/fonts"; // should be included only used ones in implementation
-@import "../bower_components/lato-fontface/scss/lato"; // should be included only used ones in implementation
+//$lato-path: "../bower_components/lato-fontface/fonts"; // should be included only used ones in implementation
+//@import "../bower_components/lato-fontface/scss/lato"; // should be included only used ones in implementation
 
 
 

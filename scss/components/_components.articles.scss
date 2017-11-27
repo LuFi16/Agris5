@@ -6,8 +6,8 @@ article {                     // JUST FOR TESTING
 ///// MOBILE /////
 
 .c-articles__first{
-  padding: 3rem;
-  margin-bottom: 1rem;
+  padding: 2rem;
+ // margin-bottom: 1rem;
 }
 
 .c-articles__download{
@@ -17,7 +17,6 @@ article {                     // JUST FOR TESTING
   img{
     margin-right: 0.5rem;
     border-right: 1px solid $color-download-border;
-
     padding-right: 0.5rem;
   }
 }
@@ -45,4 +44,7 @@ article {                     // JUST FOR TESTING
 
 .c-articles__article-keywords{
   padding-top: 2rem;
+}
+.c-articles__first-current-issue{
+  color: $color-agris-green;
 }

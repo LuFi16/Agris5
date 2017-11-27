@@ -4,9 +4,12 @@ main > header {                  // JUST FOR TESTING
 
 
 ///// MOBILE /////
+main > header{
+  padding-top: 2rem;
+}
 
 .c-header-introduction{
-  padding: 5rem;
+ // padding-top: 5rem;
   text-align: center;
   color: $color-introduction;
 
@@ -28,7 +31,7 @@ main > header {                  // JUST FOR TESTING
 .c-header-introduction__issn{
   border: 1px solid $color-introduction;
   padding: 0.5rem;
-  margin: auto;  //align to center
+  margin: auto auto 2rem auto;  //align to center
   width: 20%;  //should be col-mobile-12 etc.
 }
 
