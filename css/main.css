@@ -2860,18 +2860,16 @@ article {
   margin-bottom: 1rem;
   border: 1px solid grey; }
 
-.c-articles__article-tittle {
-  border-bottom: 1px solid grey; }
-
 .c-articles__article-abstract {
   border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
   padding-top: 2rem; }
 
 .c-articles__article-authors {
-  border-bottom: 1px solid grey;
   padding-top: 2rem; }
 
 .c-articles__article-keywords {
+  border-top: 1px solid grey;
   padding-top: 2rem; }
 
 .c-articles__first-current-issue {
@@ -2879,6 +2877,12 @@ article {
 
 footer {
   background: orange; }
+
+footer {
+  align-items: center; }
+  footer > address > div {
+    text-align: left;
+    padding-left: 0.5rem; }
 
 main > header {
   background: darkblue; }
@@ -2941,9 +2945,6 @@ main > header {
   border: 1px solid #038000;
   padding: 0.5rem 1rem 0.5rem 1rem; }
 
-.c-nav-side_ul {
-  align-items: center; }
-
 .c-nav-side__indexed-block {
   border-top: 1px solid black;
   padding-top: 1rem;
@@ -2951,9 +2952,6 @@ main > header {
 
 .c-nav-up {
   background: saddlebrown; }
-
-.c-nav-up {
-  width: 100%; }
 
 .c-nav-up__text {
   display: none; }

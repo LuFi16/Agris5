@@ -31,7 +31,7 @@ main > header{
 .c-header-introduction__issn{
   border: 1px solid $color-introduction;
   padding: 0.5rem;
-  margin: auto auto 2rem auto;  //align to center
+  margin: auto auto 2rem auto;            //align to center and bottom indentation
   width: 20%;  //should be col-mobile-12 etc.
 }
 

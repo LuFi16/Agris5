@@ -29,20 +29,22 @@ article {                     // JUST FOR TESTING
  }
 
 .c-articles__article-tittle{
-  border-bottom: 1px solid $color-article-border;
+  //border-bottom: 1px solid $color-article-border;
 }
 
 .c-articles__article-abstract{
   border-bottom: 1px solid $color-article-border;
+  border-top: 1px solid $color-article-border;
   padding-top: 2rem;
 }
 
 .c-articles__article-authors{
-  border-bottom: 1px solid $color-article-border;
+  //border-bottom: 1px solid $color-article-border;
   padding-top: 2rem;
 }
 
 .c-articles__article-keywords{
+  border-top: 1px solid $color-article-border;
   padding-top: 2rem;
 }
 .c-articles__first-current-issue{
