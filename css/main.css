@@ -2879,7 +2879,8 @@ footer {
   background: orange; }
 
 footer {
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around; }
   footer > address > div {
     text-align: left;
     padding-left: 0.5rem; }

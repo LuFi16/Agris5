@@ -2,7 +2,6 @@ article {                     // JUST FOR TESTING
   background: yellowgreen;    // JUST FOR TESTING
 }                             // JUST FOR TESTING
 
-
 ///// MOBILE /////
 
 .c-articles__first{
@@ -25,8 +24,7 @@ article {                     // JUST FOR TESTING
   padding: 2rem;
   margin-bottom: 1rem;
   border: 1px solid $color-article-border;
-
- }
+}
 
 .c-articles__article-tittle{
   //border-bottom: 1px solid $color-article-border;
@@ -47,6 +45,7 @@ article {                     // JUST FOR TESTING
   border-top: 1px solid $color-article-border;
   padding-top: 2rem;
 }
+
 .c-articles__first-current-issue{
   color: $color-agris-green;
 }

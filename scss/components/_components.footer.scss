@@ -6,11 +6,11 @@ footer {                  // JUST FOR TESTING
 
 footer{
   align-items: center;
+  justify-content: space-around;
   > address{
     > div{
       text-align: left;
       padding-left: 0.5rem;
     }
   }
-
 }
