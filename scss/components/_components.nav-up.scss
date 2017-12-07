@@ -1,14 +1,13 @@
-.c-nav-up {                   // JUST FOR TESTING
-  background: saddlebrown;    // JUST FOR TESTING
-}                             // JUST FOR TESTING
+.c-nav-up {
+  background: $color-header;
+}
 
 
 ///// MOBILE /////
 
 .c-nav-up{
- //display: flex;
- // justify-content: center;
- // align-items: center;
+  display: inline-block;
+  padding-left: 6rem;
 }
 
 .c-nav-up__text{
@@ -26,6 +25,11 @@
   list-style-type: none;
   margin-top: 1.5rem;
 }
-
-.c-nav-up__ul{
+.c-nav-up__menu{
+  list-style-type: none;
+  margin-top: 1.5rem;
+  img{
+    height: 58px;
+  }
 }
+

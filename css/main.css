@@ -2841,7 +2841,7 @@ table {
   display: none !important; }
 
 article {
-  background: yellowgreen; }
+  background: white; }
 
 .c-articles__first {
   padding: 2rem;
@@ -2884,13 +2884,20 @@ article {
 
 .c-articles__article-keywords {
   border-top: 1px solid grey;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  background: #ededed; }
 
 .c-articles__first-current-issue {
   color: #038000; }
 
+.c-articles__article-tittle {
+  background: #f8f8f8; }
+
+@media (max-width: 801px) {
+  .c-articles__article {
+    margin: 2rem; } }
 footer {
-  background: orange; }
+  background: #dedede; }
 
 footer {
   padding: 0 0 0 1rem;
@@ -2936,12 +2943,13 @@ main > header {
   margin: auto; }
 
 .c-nav-side {
-  background: sandybrown; }
+  background: white; }
 
 .c-nav-side {
   padding-left: 2rem;
   padding-right: 1rem;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  background: #f8f8f8; }
   .c-nav-side li {
     list-style-type: none; }
     .c-nav-side li a {
@@ -2951,8 +2959,8 @@ main > header {
   color: black; }
 
 .c-nav-side__link {
-  display: none;
-  color: black; }
+  color: black;
+  display: none; }
 
 .c-nav-side__link-indexed {
   color: #038000; }
@@ -2962,13 +2970,49 @@ main > header {
   border: 1px solid #038000;
   padding: 0.5rem 1rem 0.5rem 1rem; }
 
+.c-nav-side_ul1 {
+  padding-top: 2rem; }
+
 .c-nav-side__indexed-block {
   border-top: 1px solid black;
-  padding-top: 1rem;
+  padding-top: 2rem;
   align-items: center; }
 
+/*
+///////  MOBILE  //////////
+@media (max-width: 599px) {
+  .c-nav-side__link{
+    display: none;      // hidden for mobile version
+  }
+  .c-nav-side{
+    background: yellow;
+  }
+}
+///////  TABLET  //////////
+@media (min-width: 600px) and (max-width: 800px) {
+  .c-nav-side__link{
+    display: none;
+  }
+  .c-nav-side{
+    background: purple;
+  }
+}
+//////  SCREEN  ////////
+@media (min-width: 801px) {
+  .c-nav-side__link{
+    display: none;
+  }
+  .c-nav-side{
+    background: red;
+  }
+}
+*/
 .c-nav-up {
-  background: saddlebrown; }
+  background: white; }
+
+.c-nav-up {
+  display: inline-block;
+  padding-left: 6rem; }
 
 .c-nav-up__text {
   display: none; }
@@ -2981,5 +3025,11 @@ main > header {
 .c-nav-up__logo {
   list-style-type: none;
   margin-top: 1.5rem; }
+
+.c-nav-up__menu {
+  list-style-type: none;
+  margin-top: 1.5rem; }
+  .c-nav-up__menu img {
+    height: 58px; }
 
 /*# sourceMappingURL=main.css.map */

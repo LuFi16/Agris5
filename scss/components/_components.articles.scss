@@ -1,8 +1,6 @@
-article {                     // JUST FOR TESTING
-  background: yellowgreen;    // JUST FOR TESTING
-}                             // JUST FOR TESTING
-
-///// MOBILE /////
+article {
+  background: $color-article;
+}
 
 .c-articles__first{
   padding: 2rem;
@@ -63,8 +61,20 @@ article {                     // JUST FOR TESTING
 .c-articles__article-keywords{
   border-top: 1px solid $color-article-border;
   padding-top: 2rem;
+  background: $color-keywords;
 }
 
 .c-articles__first-current-issue{
   color: $color-agris-green;
+}
+
+.c-articles__article-tittle{
+  background: $color-menu;
+}
+
+//////  SCREEN  ////////
+@media (max-width: 801px){
+  .c-articles__article{
+    margin: 2rem;
+  }
 }

@@ -1,6 +1,6 @@
-.c-nav-side {                       // JUST FOR TESTING
-  background: sandybrown;           // JUST FOR TESTING
-}                                   // JUST FOR TESTING
+.c-nav-side {
+ background: $color-side-menu;
+}
 
 ///// MOBILE /////
 
@@ -11,9 +11,10 @@
       text-decoration: none;
     }
   }
-  padding-left: 2rem;      //i have to write different padding for the same distances (why?)
+  padding-left: 2rem;
   padding-right: 1rem;
   padding-top: 1rem;
+  background: $color-menu;
 }
 
 .c-nav-side__link-header{
@@ -21,8 +22,8 @@
 }
 
 .c-nav-side__link{
-  display: none;      // hidden for mobile version
   color: $color-text;
+  display: none;
 }
 
 .c-nav-side__link-indexed{
@@ -35,18 +36,42 @@
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
-.c-nav-side_ul{
-  //align-items: center;
+.c-nav-side_ul1{
+  padding-top: 2rem;
 }
 
 .c-nav-side__indexed-block{
   border-top: 1px solid $color-nav-side-line;
-  padding-top: 1rem;
+  padding-top: 2rem;
   align-items: center;
-  //justify-items: end;   //doesn't work
 }
 
+/*
+///////  MOBILE  //////////
+@media (max-width: 599px) {
+  .c-nav-side__link{
+    display: none;      // hidden for mobile version
+  }
+  .c-nav-side{
+    background: yellow;
+  }
+}
+///////  TABLET  //////////
+@media (min-width: 600px) and (max-width: 800px) {
+  .c-nav-side__link{
+    display: none;
+  }
+  .c-nav-side{
+    background: purple;
+  }
+}
 //////  SCREEN  ////////
-@media (max-width: 801px){
-
+@media (min-width: 801px) {
+  .c-nav-side__link{
+    display: none;
+  }
+  .c-nav-side{
+    background: red;
+  }
 }
+*/
