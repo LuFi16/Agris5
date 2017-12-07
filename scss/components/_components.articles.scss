@@ -6,18 +6,37 @@ article {                     // JUST FOR TESTING
 
 .c-articles__first{
   padding: 2rem;
+  align-items: center;
+  border: 1px solid $color-article-border;
+  margin: 1rem 0 1rem 0;
  // margin-bottom: 1rem;
 }
 
 .c-articles__download{
+  display: flex;
   border: 1px solid $color-download-border;
-  width: 30%;
   padding: 0.5rem;
+  margin: 0;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: $color-text;
+  //align-items: flex-end;
   img{
-    margin-right: 0.5rem;
-    border-right: 1px solid $color-download-border;
-    padding-right: 0.5rem;
+   // margin-right: 1rem;
+   // border-right: 1px solid $color-download-border;
+   // padding-right: 0.5rem;
   }
+}
+.c-articles__download-img{
+  display: flex;
+  padding: 0 0.5rem 0 0;
+  margin: 0;
+}
+.c-articles__download-text{
+  display: flex;
+  border-left: 1px solid $color-download-border;
+  padding: 0 0 0 0.5rem;
+  margin: 0;
 }
 
 .c-articles__article{

@@ -2844,16 +2844,30 @@ article {
   background: yellowgreen; }
 
 .c-articles__first {
-  padding: 2rem; }
+  padding: 2rem;
+  align-items: center;
+  border: 1px solid grey;
+  margin: 1rem 0 1rem 0; }
 
 .c-articles__download {
+  display: flex;
   border: 1px solid black;
-  width: 30%;
-  padding: 0.5rem; }
-  .c-articles__download img {
-    margin-right: 0.5rem;
-    border-right: 1px solid black;
-    padding-right: 0.5rem; }
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black; }
+
+.c-articles__download-img {
+  display: flex;
+  padding: 0 0.5rem 0 0;
+  margin: 0; }
+
+.c-articles__download-text {
+  display: flex;
+  border-left: 1px solid black;
+  padding: 0 0 0 0.5rem;
+  margin: 0; }
 
 .c-articles__article {
   padding: 2rem;
@@ -2879,6 +2893,7 @@ footer {
   background: orange; }
 
 footer {
+  padding: 0 0 0 1rem;
   align-items: center;
   justify-content: space-around; }
   footer > address > div {
@@ -2893,7 +2908,8 @@ main > header {
 
 .c-header-introduction {
   text-align: center;
-  color: white; }
+  color: white;
+  border-bottom: 1px solid grey; }
 
 .c-header-introduction__text {
   display: none; }
@@ -2963,6 +2979,7 @@ main > header {
       color: black; }
 
 .c-nav-up__logo {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-top: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,6 +6,9 @@
 ///// MOBILE /////
 
 .c-nav-up{
+ //display: flex;
+ // justify-content: center;
+ // align-items: center;
 }
 
 .c-nav-up__text{
@@ -21,8 +24,7 @@
 
 .c-nav-up__logo{
   list-style-type: none;
-  li a img{
-  }
+  margin-top: 1.5rem;
 }
 
 .c-nav-up__ul{
