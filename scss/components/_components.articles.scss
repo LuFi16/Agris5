@@ -1,16 +1,18 @@
-article {
-  background: $color-article;
-}
+
+.c-articles{}
 
 .c-articles__first{
   padding: 2rem;
   align-items: center;
   border: 1px solid $color-article-border;
   margin: 1rem 0 1rem 0;
- // margin-bottom: 1rem;
 }
-
-.c-articles__download{
+.c-first__img-news{}
+.c-first__h3{}
+.c-first__h3-green{
+  color: $color-agris-green;
+}
+.c-first__a{
   display: flex;
   border: 1px solid $color-download-border;
   padding: 0.5rem;
@@ -18,59 +20,48 @@ article {
   font-size: 1.5rem;
   text-decoration: none;
   color: $color-text;
-  //align-items: flex-end;
-  img{
-   // margin-right: 1rem;
-   // border-right: 1px solid $color-download-border;
-   // padding-right: 0.5rem;
-  }
 }
-.c-articles__download-img{
+.c-first__p{
   display: flex;
   padding: 0 0.5rem 0 0;
   margin: 0;
 }
-.c-articles__download-text{
+.c-first__img-download{}
+.c-first__download{
   display: flex;
   border-left: 1px solid $color-download-border;
   padding: 0 0 0 0.5rem;
   margin: 0;
 }
 
-.c-articles__article{
+.c-article{
+  background: $color-article;
   padding: 2rem;
   margin-bottom: 1rem;
   border: 1px solid $color-article-border;
 }
-
-.c-articles__article-tittle{
-  //border-bottom: 1px solid $color-article-border;
+.c-article__tittle{
+  background: $color-menu;
 }
-
-.c-articles__article-abstract{
+.c-article__h2{}
+.c-article__abstract{
   border-bottom: 1px solid $color-article-border;
   border-top: 1px solid $color-article-border;
   padding-top: 2rem;
 }
-
-.c-articles__article-authors{
-  //border-bottom: 1px solid $color-article-border;
+.c-article__h3{}
+.c-article__authors{
   padding-top: 2rem;
 }
-
-.c-articles__article-keywords{
+.c-article__keywords{
   border-top: 1px solid $color-article-border;
   padding-top: 2rem;
   background: $color-keywords;
 }
 
-.c-articles__first-current-issue{
-  color: $color-agris-green;
-}
 
-.c-articles__article-tittle{
-  background: $color-menu;
-}
+
+/*
 
 //////  SCREEN  ////////
 @media (max-width: 801px){
@@ -78,3 +69,4 @@ article {
     margin: 2rem;
   }
 }
+*/

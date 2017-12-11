@@ -1,17 +1,14 @@
-footer {
+
+.c-footer{
   background: $color-footer;
-}
-
-///// MOBILE /////
-
-footer{
   padding: 0 0 0 1rem;
   align-items: center;
   justify-content: space-around;
-  > address{
-    > div{
-      text-align: left;
-      padding-left: 0.5rem;
-    }
-  }
 }
+.c-footer__a{}
+.c-footer__img{}
+.c-footer__address{
+  text-align: left;
+  padding-left: 0.5rem;
+}
+

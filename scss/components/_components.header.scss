@@ -1,44 +1,54 @@
-main > header {
+
+.c-main{}
+
+.c-main__header{
   background: $color-introduction-back;
-}
-
-
-///// MOBILE /////
-main > header{
   padding-top: 2rem;
 }
 
-.c-header-introduction{
- // padding-top: 5rem;
+.c-main__introduction{
   text-align: center;
   color: $color-introduction;
   border-bottom: 1px solid $color-article-border;
 }
 
-.c-header-introduction__text{
-  display: none;     // hidden for mobile version
-}
+.c-main__h1{}
 
-.c-header-introduction__about{
-  text-decoration: none;
-  color: $color-agris-green;
-  border: 1px solid $color-agris-green;
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-  font-weight: 600;
-}
-
-.c-header-introduction__issn{
+.c-main__issn{
   border: 1px solid $color-introduction;
   padding: 0.5rem;
   margin: auto auto 2rem auto;            //align to center and bottom indentation
   width: 20%;  //should be col-mobile-12 etc.
-}
+  }
 
-.c-header-introduction__more_info{
-  background: $color-introduction;
-  color: $color-text;
-  padding: 1rem;
-  width: 55%;  //should be col-mobile-12 etc.
-  margin: auto;  //align to center
-}
+  .c-main__text{
+    display: none;     // hidden for mobile version
+  }
+
+  .c-main__more-info{
+    background: $color-introduction;
+    color: $color-text;
+    padding: 1rem;
+    width: 55%;  //should be col-mobile-12 etc.
+    margin: auto;  //align to center
+  }
+
+  .c-main__about{
+    text-decoration: none;
+    color: $color-agris-green;
+    border: 1px solid $color-agris-green;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    font-weight: 600;
+  }
+
+
+
+
+
+
+
+
+
+
+

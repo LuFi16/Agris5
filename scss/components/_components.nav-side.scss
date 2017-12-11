@@ -1,53 +1,80 @@
-.c-nav-side {
- background: $color-side-menu;
-}
-
-///// MOBILE /////
 
 .c-nav-side{
-  li{
-    list-style-type: none;
-    a{
-      text-decoration: none;
-    }
-  }
+  background: $color-side-menu;
   padding-left: 2rem;
   padding-right: 1rem;
   padding-top: 1rem;
-  background: $color-menu;
+  // background: $color-menu;
 }
 
-.c-nav-side__link-header{
-  color: $color-text;
-}
-
-.c-nav-side__link{
-  color: $color-text;
-  display: none;
-}
-
-.c-nav-side__link-indexed{
-  color: $color-agris-green;
-}
-
-.c-nav-side__link-more{
-  color: $color-agris-green;
-  border: 1px solid $color-agris-green;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-}
-
-.c-nav-side_ul1{
+.c-nav-side__ul-menu{
   padding-top: 2rem;
 }
+.c-nav-side__li{
+  list-style-type: none;
+}
+.c-nav-side__a{
+  text-decoration: none;
+  color: $color-text;
+}
+.c-nav-side__a-main{
+  color: $color-text;
+}
+.c-nav-side__a-other{
+  display: none;
+}
+.c-nav-side__h3{}
 
-.c-nav-side__indexed-block{
+.c-nav-side__ul-indexed{
   border-top: 1px solid $color-nav-side-line;
   padding-top: 2rem;
   align-items: center;
 }
+.c-nav-side__a-indexed{
+  color: $color-agris-green;
+}
+.c-nav-side__a-more{
+  color: $color-agris-green;
+  border: 1px solid $color-agris-green;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.c-nav-side__img{}
+
+
+
+
 
 /*
-///////  MOBILE  //////////
+
+//MOBILE
+@media (max-width: 599px) {
+  .c-nav-side{
+   // background: yellow;
+  }
+  .c-nav-side__link{
+    display: none;
+  }
+}
+
+//   TABLET
+@media (min-width: 600px) and (max-width: 800px) {
+  .c-nav-side{
+   // background: purple;
+  }
+}
+
+//COMPUTER
+@media (min-width: 801px) {
+  .c-nav-side {
+   // background: red;
+  }
+}
+
+
+
+
+
+   //MOBILE
 @media (max-width: 599px) {
   .c-nav-side__link{
     display: none;      // hidden for mobile version
@@ -56,7 +83,7 @@
     background: yellow;
   }
 }
-///////  TABLET  //////////
+//   TABLET
 @media (min-width: 600px) and (max-width: 800px) {
   .c-nav-side__link{
     display: none;
@@ -65,7 +92,7 @@
     background: purple;
   }
 }
-//////  SCREEN  ////////
+// SCREEN
 @media (min-width: 801px) {
   .c-nav-side__link{
     display: none;
