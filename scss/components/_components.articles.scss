@@ -1,11 +1,13 @@
+.c-body{
+  background: $color-background;
+}
 
 .c-articles{}
 
 .c-articles__first{
   padding: 2rem;
   align-items: center;
-  border: 1px solid $color-article-border;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 1rem 1rem 1rem;
 }
 .c-first__img-news{}
 .c-first__h3{}
@@ -36,26 +38,26 @@
 
 .c-article{
   background: $color-article;
-  padding: 2rem;
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
   border: 1px solid $color-article-border;
 }
 .c-article__tittle{
   background: $color-menu;
+  padding: 2rem 1rem 1rem 1rem;
 }
 .c-article__h2{}
 .c-article__abstract{
   border-bottom: 1px solid $color-article-border;
   border-top: 1px solid $color-article-border;
-  padding-top: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 .c-article__h3{}
 .c-article__authors{
-  padding-top: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 .c-article__keywords{
   border-top: 1px solid $color-article-border;
-  padding-top: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
   background: $color-keywords;
 }
 

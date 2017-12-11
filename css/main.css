@@ -2840,11 +2840,13 @@ table {
 .u-hidden {
   display: none !important; }
 
+.c-body {
+  background: #f1f1f1; }
+
 .c-articles__first {
   padding: 2rem;
   align-items: center;
-  border: 1px solid grey;
-  margin: 1rem 0 1rem 0; }
+  margin: 1rem 1rem 1rem 1rem; }
 
 .c-first__h3-green {
   color: #038000; }
@@ -2871,24 +2873,24 @@ table {
 
 .c-article {
   background: white;
-  padding: 2rem;
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
   border: 1px solid grey; }
 
 .c-article__tittle {
-  background: #f8f8f8; }
+  background: #f8f8f8;
+  padding: 2rem 1rem 1rem 1rem; }
 
 .c-article__abstract {
   border-bottom: 1px solid grey;
   border-top: 1px solid grey;
-  padding-top: 2rem; }
+  padding: 2rem 1rem 1rem 1rem; }
 
 .c-article__authors {
-  padding-top: 2rem; }
+  padding: 2rem 1rem 1rem 1rem; }
 
 .c-article__keywords {
   border-top: 1px solid grey;
-  padding-top: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
   background: #ededed; }
 
 /*
@@ -2902,7 +2904,7 @@ table {
 */
 .c-footer {
   background: #dedede;
-  padding: 0 0 0 1rem;
+  padding: 1rem 0 0 1rem;
   align-items: center;
   justify-content: space-around; }
 
@@ -2911,7 +2913,7 @@ table {
   padding-left: 0.5rem; }
 
 .c-main__header {
-  background: darkblue;
+  background: url("../img/pozadi.jpg") grey;
   padding-top: 2rem; }
 
 .c-main__introduction {
