@@ -1,54 +1,58 @@
 
+.c-header{
+  padding: 0;
+}
 .c-main{}
-
 .c-main__header{
   background: url("../img/pozadi.jpg") $color-introduction-back;
   padding-top: 2rem;
 }
-
 .c-main__introduction{
   text-align: center;
   color: $color-introduction;
   border-bottom: 1px solid $color-article-border;
+  padding: 0 2rem 0 2rem;
 }
-
 .c-main__h1{}
-
 .c-main__issn{
   border: 1px solid $color-introduction;
   padding: 0.5rem;
-  margin: auto auto 2rem auto;            //align to center and bottom indentation
-  width: 20%;  //should be col-mobile-12 etc.
+  margin: auto auto 2rem auto;     //align to center and bottom indentation
+  width: 10rem;
   }
-
-  .c-main__text{
-    display: none;     // hidden for mobile version
-  }
-
+  .c-main__text{}
   .c-main__more-info{
     background: $color-introduction;
     color: $color-text;
     padding: 1rem;
-    width: 55%;  //should be col-mobile-12 etc.
     margin: auto;  //align to center
   }
-
   .c-main__about{
     text-decoration: none;
     color: $color-agris-green;
     border: 1px solid $color-agris-green;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    margin-left: 0.3rem;
     font-weight: 600;
   }
 
 
-
-
-
-
-
-
-
-
-
+@media (min-width: 1024px) {    // COMPUTER
+  .c-main__text{
+    padding: 0 7rem 0 7rem;
+  }
+  .c-main__more-info{
+    width: 30rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {   // TABLET
+}
+@media (max-width: 599px) {   // MOBILE
+  .c-main__text{
+    display: none;
+  }
+  .c-main__more-info{
+    width: 90%;
+    line-height: 2;
+  }
+}

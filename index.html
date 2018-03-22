@@ -10,27 +10,19 @@
 <body class="c-body">
 
 <header class="c-header row">
-    <nav class="c-nav-up col-sm-12">
-        <ul class="c-nav-up__ul row">
-            <li class="c-nav-up__li c-nav-up__logo col-sm-10">
-                <a href="index.html" class="c-nav-up__a">
+    <nav class="c-nav-up col-sm-12 row">
+        <ul class="c-nav-up__text row">
+            <li class="c-nav-up__text-li-logo">
+                <a class="c-nav-up__text-a" href="#">
                     <img class="c-nav-up__img-logo" src="img/agris.png" alt="Agris online" />
                 </a>
             </li>
-            <li class="c-nav-up__li c-nav-up__li-menu c-nav-up__menu col-sm-2 row">
-                <a href="#" class="c-nav-up__a">
-                    <img class="c-nav-up__img-menu" src="img/Hamburger_icon.svg.png" alt="Agris online" />
-                </a>
-            </li>
-        </ul>
-            <!-- <a class="c-responsive-toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>  <!-- For drop-down menu in mobile version  -->
-        <ul class="c-nav-up__text">
             <li class="c-nav-up__text-li">
                 <a class="c-nav-up__text-a" href="#">
                     ABOUT THE JOURNAL
                 </a>
             </li>
-            <li class="c-nav-up__text-li">                                            <!-- something is wrong <li> <div> -->
+            <li class="c-nav-up__text-li">
                 <a class="c-nav-up__text-a" href="#">
                     EDITORIAL BOARD
                 </a>
@@ -40,18 +32,23 @@
                     CONTACTS AND LINKS
                 </a>
             </li>
-                <!-- SWITCH TO ENGLISH VERSION
-                <li>
+            <li class="c-nav-up__text-li-search">  <!-- searching -->
+                <a href="#" class="c-btn__a"><button class="c-btn__login" type="submit">LOGIN</button> </a>
+                <a href="#" class="c-btn__a"><button class="c-btn__register" type="submit">REGISTER</button> </a>
+            </li>
+            <li class="c-nav-up__text-li-search">  <!-- searching -->
+                <input class="c-field__search" type="text" placeholder="Search papers...">
+                <button class="c-btn__search" type="submit">Search</button>
+            </li>
+                <!-- switch to en/cs version
+                <li class="c-nav-up__text-li">
                     <a class="c-flag c-btn c-btn--ghost">Switch to <img src="img/en.svg" height="18" alt="english" title="english"></a>
-                </li>
-                -->
-
-                <!-- SEARCHING
-                <form>
-                    <input class="c-form__text c-form__text--tiny" type="text" placeholder="Hledaný výraz...">
-                    <button class="c-btn c-btn--secondary c-btn--tiny" type="submit">Hledat</button>
-                </form>
-                -->
+                </li>  -->
+            <li class="c-nav-up__li c-nav-up__li-menu c-nav-up__menu col-sm-2 row">
+                <a href="#" class="c-nav-up__a">
+                    <img class="c-nav-up__img-menu" src="img/Hamburger_icon.png" alt="Agris online" />
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -63,7 +60,8 @@
                 THE JOURNAL ON-LINE PAPERS IN ECONOMICS AND INFORMATICS
             </h1>
             <p class="c-main__issn col-sm-12">
-               ISSN 1804-1930
+               ISSN&nbsp;1804&ndash;1930
+                <!-- &nbsp; is not breaking space -->
             </p>
             <div class="c-main__text">
                 <p>
@@ -82,18 +80,18 @@
             <p class="c-main__more-info col-sm-12">
                 More information can be found at
                 <a class="c-main__about" href="#">
-                    About the journal
+                    About&nbsp;the&nbsp;journal
                 </a>
             </p>
         </div>
     </header>
 
     <div class="row">
-        <nav class="c-nav-side col-xs-12 col-md-3 ">
-            <ul class="c-nav-side__ul-menu row">
-                <li class="c-nav-side__li col-sm-4 center-sm">
+        <nav class="c-nav-side col-xs-12">
+            <ul class="c-nav-side__ul-menu">   <!--  row !-->
+                <li class="c-nav-side__li-title">
                     <a class="c-nav-side__a c-nav-side__a-main" href="#">
-                        <h3 class="c-nav-side__h3">
+                        <h3 class="c-nav-side__h3 c-nav-side__h3-content">
                             Content
                         </h3>
                     </a>
@@ -108,7 +106,7 @@
                         Archive
                     </a>
                 </li>
-                <li class="c-nav-side__li col-sm-4 center-sm">
+                <li class="c-nav-side__li-title">
                     <a class="c-nav-side__a c-nav-side__a-main" href="#">
                         <h3 class="c-nav-side__h3">
                             For Authors
@@ -130,7 +128,7 @@
                         Paper template
                     </a>
                 </li>
-                <li class="c-nav-side__li col-sm-4 center-sm">
+                <li class="c-nav-side__li-title">
                     <a class="c-nav-side__a c-nav-side__a-main" href="#">
                         <h3 class="c-nav-side__h3">
                             For Reviewers
@@ -143,24 +141,24 @@
                     </a>
                 </li>
             </ul>
-            <ul class="c-nav-side__ul-indexed row col-xs-12 col-sm-12">
-                <li class="c-nav-side__li col-sm-3 center-sm">
+            <ul class="c-nav-side__ul-indexed col-xs-12 col-sm-12">  <!--  row !-->
+                <li class="c-nav-side__li-indexed c-nav-side__li-indexed-by col-sm-3 center-sm">
                     <a class="c-nav-side__a c-nav-side__a-indexed" href="#">
                         INDEXED BY
                     </a>
                 </li>                                            <!-- something is wrong <li> <div> -->
-                <li class="c-nav-side__li col-sm-3 center-sm">
-                    <a href="#" class="c-nav-side__a">
+                <li class="c-nav-side__li-indexed col-sm-3 center-sm">
+                    <a href="#" class="c-nav-side__a c-nav-side__a-indexed">
                         <img class="c-nav-side__img" src="img/scopus.png" alt="scopus" title="scopus"/>
                     </a>
                 </li>
-                <li class="c-nav-side__li col-sm-3 center-sm">
-                    <a href="#" class="c-nav-side__a">
+                <li class="c-nav-side__li-indexed col-sm-3 center-sm">
+                    <a href="#" class="c-nav-side__a c-nav-side__a-indexed">
                         <img class="c-nav-side__img" src="img/doi.png" title="doi" alt="doi"/>
                     </a>
                 </li>
-                <li class="c-nav-side__li col-sm-3 center-sm">
-                    <a class="c-nav-side__a c-nav-side__a-more" href="#">
+                <li class="c-nav-side__li-indexed col-sm-3 center-sm">
+                    <a class="c-nav-side__a c-nav-side__a-indexed c-nav-side__a-more" href="#">
                         MORE
                     </a>
                 </li>
@@ -169,24 +167,26 @@
 
         <div class="c-articles col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <section class="c-articles__first row">
-                <p class="col-sm-4">
-                    <img class="c-first__img-news" src="img/noviny.png" alt="newspaper" />
-                </p>
-                <div class="col-sm-8 ">
-                    <h3 class="c-first__h3">
-                        CONTENT OF CURRENT ISSUE
-                    </h3>
-                    <h3 class="c-first__h3-green">
-                        CURRENT ISSUE NO 3/2016, SEPTEMBER
-                    </h3>
+                <div class="c-first__main">
+                    <p class="col-sm-4">
+                        <img class="c-first__img-news" src="img/noviny.png" alt="newspaper" />
+                    </p>
+                    <div class="c-first__text">
+                        <h3 class="c-first__h3">
+                            CONTENT OF CURRENT ISSUE
+                        </h3>
+                        <h3 class="c-first__h3-green">
+                            CURRENT ISSUE NO 3/2016, SEPTEMBER
+                        </h3>
+                    </div>
                 </div>
 
-                <a class="c-first__a col-sm-12  middle-sm" href="#">
+                <a class="c-first__a col-12 middle" href="#">
                     <p class="c-first__p">
                         <img class="c-first__img-download" id="glasses" src="img/bryle.png" alt="glasses" />
                     </p>
                     <p class="c-first__download">
-                        DOWNLOAD PDF
+                        DOWNLOAD&nbsp;PDF
                     </p>
                 </a>
             </section>
@@ -199,7 +199,7 @@
                 </section>
 
                 <section class="c-article__abstract">
-                    <h3 class="c-article__h3">
+                    <h3 class="c-article__h3 c-article__h3-abstract">
                         ABSTRACT
                     </h3>
                     <p>
@@ -242,7 +242,7 @@
                 </section>
 
                 <section class="c-article__abstract">
-                    <h3 class="c-article__h3">
+                    <h3 class="c-article__h3 c-article__h3-abstract">
                         ABSTRACT
                     </h3>
 
