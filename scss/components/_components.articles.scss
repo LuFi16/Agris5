@@ -60,6 +60,9 @@ $width-min-article: 10rem;
   padding: 0.5rem;
   margin: 0;
 }
+.c-first__download:hover{
+  background: transparentize($color-agris-green, 0.9);
+}
 .c-article{
   background: $color-article;
   margin: 0 1rem 1rem 1rem;

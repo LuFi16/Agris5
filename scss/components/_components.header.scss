@@ -35,7 +35,9 @@
     margin-left: 0.3rem;
     font-weight: 600;
   }
-
+.c-main__about:hover{
+  background: transparentize($color-agris-green, 0.9);
+}
 
 @media (min-width: 1024px) {    // COMPUTER
   .c-main__text{
