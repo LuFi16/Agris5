@@ -3126,10 +3126,12 @@ table {
 .c-nav-up-li-search:hover {
   background: none; }
 
-.c-nav-up-li-logo {
+.c-nav-up__li-logo {
   list-style-type: none;
-  padding: 0 1rem 0 1rem;
   margin: auto; }
+
+.c-nav-up__li-menu {
+  list-style-type: none; }
 
 .c-nav-up-a {
   text-decoration: none;
@@ -3188,20 +3190,27 @@ table {
     padding: 1.5rem 1rem 1.5rem 1rem; }
 
   .c-nav-up-li-search {
-    padding: 1rem 1rem 1rem 1rem; } }
+    padding: 1rem 1rem 1rem 1rem; }
+
+  .c-nav-up-li-logo {
+    padding: 0 1rem 0 1rem; } }
 @media (max-width: 599px) {
   .c-nav-up {
-    display: inline-block;
-    padding-left: 6rem; }
-
-  .c-nav-up__li {
-    margin-top: 1.5rem; }
+    margin: auto;
+    display: inline-flex; }
 
   .c-nav-up__img-menu {
     max-height: 50px;
-    width: auto;
-    align-self: flex-end;
-    margin: 0;
-    padding: 0; } }
+    width: auto; }
+
+  .c-nav-up__li-logo {
+    padding: 1rem 1rem 1rem 0;
+    margin: 0; }
+
+  .c-nav-up__li-menu {
+    padding: 1rem 0 1rem 1rem; }
+
+  .mobile-hide {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
