@@ -89,6 +89,15 @@ $width-side-menu: 20rem;
   }
 }
 @media (min-width: 600px) and (max-width: 1023px) {   // TABLET
+  .c-nav-side__li{
+    text-align: center;
+  }
+  .c-nav-side__li-indexed{
+    margin: auto auto 1.5rem auto;
+  }
+  .c-nav-side__li-indexed-by{
+    padding: 0.5rem;
+  }
 }
 @media (max-width: 599px) {   // MOBILE
   .c-nav-side__li{

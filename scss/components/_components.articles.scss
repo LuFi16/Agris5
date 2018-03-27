@@ -103,6 +103,14 @@ $width-min-article: 10rem;
     min-width: $width-min-article;
   }
 }
+@media (min-width: 1024px) and (max-width: 1280px) {    // COMPUTER smaller
+  .c-article{
+    max-width: 40rem;
+  }
+  .c-articles{
+    max-width: 40rem;
+  }
+}
 @media (min-width: 600px) and (max-width: 1023px) {   // TABLET
   .c-body {
     background: olive;

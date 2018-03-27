@@ -5,7 +5,9 @@
   align-items: center;
   justify-content: space-around;
 }
-.c-footer__a{}
+.c-footer__p{
+  margin: 1rem;
+}
 .c-footer__img{
   max-width: 100%;
   height: auto;
@@ -13,11 +15,4 @@
 .c-footer__address{
   text-align: left;
   padding-left: 0.5rem;
-}
-
-@media (min-width: 1024px) {    // COMPUTER
-}
-@media (min-width: 600px) and (max-width: 1023px) {   // TABLET
-}
-@media (max-width: 599px) {   // MOBILE
 }
