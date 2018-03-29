@@ -13,7 +13,7 @@
   border-bottom: 1px solid $color-article-border;
   padding: 0 2rem 0 2rem;
 }
-.c-main__h1{}
+.c-first-heading{}
 .c-main__issn{
   border: 1px solid $color-introduction;
   padding: 0.5rem;
@@ -38,15 +38,6 @@
 .c-main__about:hover{
   background: transparentize($color-agris-green, 0.9);
 }
-
-@media (min-width: 1024px) {    // COMPUTER
-  .c-main__text{
-    padding: 0 7rem 0 7rem;
-  }
-  .c-main__more-info{
-    width: 30rem;
-  }
-}
 @media (max-width: 599px) {   // MOBILE
   .c-main__text{
     display: none;
@@ -54,5 +45,13 @@
   .c-main__more-info{
     width: 90%;
     line-height: 2;
+  }
+}
+@media (min-width: 1024px) {    // COMPUTER
+  .c-main__text{
+    padding: 0 7rem 0 7rem;
+  }
+  .c-main__more-info{
+    width: 30rem;
   }
 }

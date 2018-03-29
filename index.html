@@ -40,10 +40,6 @@
                 <input class="c-field__search" type="text" placeholder="Search papers...">
                 <button class="c-btn__search" type="submit">Search</button>
             </li>
-            <!-- switch to en/cs version
-            <li class="c-nav-up-li">
-                <a class="c-flag c-btn c-btn--ghost">Switch to <img src="img/en.svg" height="18" alt="english" title="english"></a>
-            </li>  -->
             <li class="c-nav-up__li-menu">
                 <a href="#" class="c-nav-up__a">
                     <img class="c-nav-up__img-menu" src="img/Hamburger_icon.png" alt="Agris online" />
@@ -56,12 +52,12 @@
 <main class="c-main">
     <header class="c-main__header row">
         <div class="c-main__introduction col-sm-12">
-            <h1 class="c-main__h1">
+            <h1 class="c-first__heading">
                 THE JOURNAL ON-LINE PAPERS IN ECONOMICS AND INFORMATICS
             </h1>
             <p class="c-main__issn col-sm-12">
                 ISSN&nbsp;1804&ndash;1930
-                <!-- &nbsp; is not breaking space -->
+                <!-- &nbsp; = not breaking space -->
             </p>
             <div class="c-main__text">
                 <p>
@@ -91,7 +87,7 @@
             <ul class="c-nav-side__ul-menu">   <!--  row !-->
                 <li class="c-nav-side__li-title">
                     <a class="c-nav-side__a c-nav-side__a-main" href="#">
-                        <h3 class="c-nav-side__h3 c-nav-side__h3-content">
+                        <h3 class="c-nav-side__third-heading c-nav-side__third-heading-content">
                             Content
                         </h3>
                     </a>
@@ -108,7 +104,7 @@
                 </li>
                 <li class="c-nav-side__li-title">
                     <a class="c-nav-side__a c-nav-side__a-main" href="#">
-                        <h3 class="c-nav-side__h3">
+                        <h3 class="c-nav-side__third-heading">
                             For Authors
                         </h3>
                     </a>
@@ -130,7 +126,7 @@
                 </li>
                 <li class="c-nav-side__li-title">
                     <a class="c-nav-side__a c-nav-side__a-main" href="#">
-                        <h3 class="c-nav-side__h3">
+                        <h3 class="c-nav-side__third-heading">
                             For Reviewers
                         </h3>
                     </a>
@@ -166,18 +162,18 @@
         </nav>
 
         <div class="c-articles col-xs-12 col-sm-12 col-md-9 col-lg-9">
-            <section class="c-articles__first row">
+            <div class="c-articles__first row">
                 <div class="c-first__main">
                     <p class="col-sm-4">
                         <img class="c-first__img-news" src="img/noviny.png" alt="newspaper" />
                     </p>
                     <div class="c-first__text">
-                        <h3 class="c-first__h3">
-                            CONTENT OF CURRENT ISSUE
-                        </h3>
-                        <h3 class="c-first__h3-green">
-                            CURRENT ISSUE NO 3/2016, SEPTEMBER
-                        </h3>
+                        <p class="c-first__third-heading">
+                            CONTENT OF CURRENT ISSUE </br>
+                            <a href="#" class="c-first__third-heading-green">
+                                NO 3/2016, SEPTEMBER
+                            </a>
+                        </p>
                     </div>
                 </div>
 
@@ -189,17 +185,17 @@
                         DOWNLOAD&nbsp;PDF
                     </p>
                 </a>
-            </section>
+            </div>
 
             <article class="c-article">
-                <section class="c-article__tittle">
-                    <h2 class="c-article__h2">
+                <div class="c-article__tittle">
+                    <h2 class="c-article__second-heading">
                         &quot;Feed Asist&quot; - An Expert System on Balanced Feeding for Dairy Animals
                     </h2>
-                </section>
+                </div>
 
-                <section class="c-article__abstract">
-                    <h3 class="c-article__h3 c-article__h3-abstract">
+                <div class="c-article__abstract">
+                    <h3 class="c-article__third-heading c-article__third-heading-abstract">
                         ABSTRACT
                     </h3>
                     <p>
@@ -211,38 +207,49 @@
                         velit. Aenean rutrum nunc sit amet sem auctor efficitur. Nunc quam odio, laoreet sit amet sollicitudin
                         a, luctus non velit. Pellentesque efficitur tellus vel ex faucibus, ac vulputate velit volutpat.
                     </p>
-                </section>
+                </div>
 
-                <section class="c-article__authors">
-                    <p>
+                <div class="c-article__authors">
+                    <p class="c-article__authors-p">
                         U. B. Angadi, S. Anandan, N. K. Gowda, D. Rajendran, L. Devi, A. V. Elangovan, S. Jash
                     </p>
-                </section>
+                </div>
 
-                <section class="c-article__keywords">
-                    <h3 class="c-article__h3">
+                <div class="c-article__keywords">
+                    <h3 class="c-article__third-heading">
                         KEYWORDS
                     </h3>
                     <p>
                         Feed formulation, Least cost, Optimalization, Balance Feeding, Expert system, Mobile apps.
                     </p>
+                    <h3 class="c-article__third-heading">
+                        CITATION
+                    </h3>
                     <p>
                         Asante, S. B., Osei-Asare, Y. B. and Kuwornu, J. K. M. (2016) "Smallholder maize farmers' food
                         consumption expenditures in Ghana: The mediating role of commercialization", AGRIS on-line Papers in
                         Economics and Informatics, Vol. 8, No. 3, pp. 13-27. ISSN 1804-1930, DOI 10.7160/aol.2016.080302.
                     </p>
-                </section>
+                </div>
+                <div class="c-article__pdf">
+                    <p class="c-article__pdf-p">
+                        <a class="c-article__pdf-a" href="#">
+                            <img class="c-article__pdf-img" src="img/pdf.png" alt="pdf"/>
+                            FULL ISSUE (.PDF, 8,4 MB)
+                        </a>
+                    </p>
+                </div>
             </article>
 
             <article class="c-article">
-                <section class="c-article__tittle">
-                    <h2 class="c-article__h2">
+                <div class="c-article__tittle">
+                    <h2 class="c-article__second-heading">
                         &quot;Feed Asist&quot; - An Expert System on Balanced Feeding for Dairy Animals
                     </h2>
-                </section>
+                </div>
 
-                <section class="c-article__abstract">
-                    <h3 class="c-article__h3 c-article__h3-abstract">
+                <div class="c-article__abstract">
+                    <h3 class="c-article__third-heading c-article__third-heading-abstract">
                         ABSTRACT
                     </h3>
 
@@ -255,16 +262,16 @@
                         velit. Aenean rutrum nunc sit amet sem auctor efficitur. Nunc quam odio, laoreet sit amet sollicitudin
                         a, luctus non velit. Pellentesque efficitur tellus vel ex faucibus, ac vulputate velit volutpat.
                     </p>
-                </section>
+                </div>
 
-                <section class="c-article__authors">
+                <div class="c-article__authors">
                     <p>
                         U. B. Angadi, S. Anandan, N. K. Gowda, D. Rajendran, L. Devi, A. V. Elangovan, S. Jash
                     </p>
-                </section>
+                </div>
 
-                <section class="c-article__keywords">
-                    <h3 class="c-article__h3">
+                <div class="c-article__keywords">
+                    <h3 class="c-article__third-heading">
                         KEYWORDS
                     </h3>
                     <p>
@@ -275,7 +282,7 @@
                         consumption expenditures in Ghana: The mediating role of commercialization", AGRIS on-line Papers in
                         Economics and Informatics, Vol. 8, No. 3, pp. 13-27. ISSN 1804-1930, DOI 10.7160/aol.2016.080302.
                     </p>
-                </section>
+                </div>
             </article>
         </div>
     </div>
