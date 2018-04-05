@@ -31,10 +31,17 @@ $width-min-article: 10rem;
   font-weight: bold;
   font-size: 1.2rem;
 }
-.c-first__third-heading{}
-.c-first__third-heading-green{
+.c-article__heading-color{
   color: $color-agris-green;
   text-decoration: none;
+}
+.c-article__heading-tittle{
+  color: $color-agris-green;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.c-article__heading{
+  font-size: 1.2rem;
 }
 .c-first__a{
   display: inline-flex;
@@ -75,18 +82,12 @@ $width-min-article: 10rem;
   background: $color-menu;
   padding: 2rem 1rem 1rem 1rem;
 }
-.c-article__second-heading{
-  color: $color-agris-green;
-}
 .c-article__abstract{
   border-bottom: 1px solid $color-article-border;
   border-top: 1px solid $color-article-border;
   padding: 2rem 1rem 1rem 1rem;
 }
-.c-article__third-heading-abstract{
-  color: $color-agris-green;
-}
-.c-article__third-heading{}
+
 .c-article__authors{
   padding: 2rem 1rem 1rem 1rem;
 }
@@ -108,32 +109,29 @@ $width-min-article: 10rem;
   color: $color-login-font;
 }
 
-@media (max-width: 599px) {   // MOBILE
-  .c-body {
+@include mq($until: mob) {  //MOBILE
+  .c-body{
     background: coral;  //for testing
   }
 }
-/*
-@include mq($from:mobile) {
+@include mq($from: mob, $until: tab) {  //TABLET
   .c-body{
-    background: coral;
-  }
-  }*/
-@media (min-width: 600px) and (max-width: 1023px) {   // TABLET
-  .c-body {
     background: olive;  //for testing
   }
 }
-@media (min-width: 1024px) {    // COMPUTER
-  .c-body {
-    //background: cornflowerblue;  //for testing
+@include mq($from: tab) {  //COMPUTER
+  .c-body{
+    background: lightseagreen;  //for testing
   }
   .c-article{
     max-width: $width-max-article;
     min-width: $width-min-article;
   }
 }
-@media (min-width: 1024px) and (max-width: 1280px) {    // COMPUTER smaller
+@include mq($from: tab, $until: com-s) {  //COMPUTER small
+  .c-body{
+    background: cornflowerblue;  //for testing
+  }
   .c-article{
     max-width: 40rem;
   }
@@ -141,7 +139,10 @@ $width-min-article: 10rem;
     max-width: 40rem;
   }
 }
-@media (min-width: 1325px) {    // COMPUTER bigger
+@include mq($from: com-b) {  //COMPUTER big
+  .c-body{
+    background: cadetblue;  //for testing
+  }
   .c-article{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -152,9 +153,6 @@ $width-min-article: 10rem;
     grid-row: 1/2;
     border: none;
     padding: 0.2rem 1rem 0.2rem 1rem;
-  }
-  .c-article__second-heading{
-    font-size: 1.1rem;
   }
   .c-article__abstract{
     grid-column: 3/7;

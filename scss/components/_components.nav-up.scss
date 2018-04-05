@@ -82,8 +82,7 @@
   text-decoration: none;
 }
 
-
-@media (max-width: 599px) {   // MOBILE
+@include mq($until: mob) {  //MOBILE
   .c-nav-up{
     //margin: auto;
     margin: 0;
@@ -107,26 +106,54 @@
     display: none;
   }
 }
-
-@media (min-width: 600px) and (max-width: 1023px) {   // TABLET
+@include mq($from: mob, $until: tab) {  //TABLET
   .c-nav-up{
     margin: auto;  //horizontal alignment to center for whole up menu
   }
   .c-nav-up__img-menu{
     display: none;
   }
-  .c-nav-up-li{
-    padding: 1.5rem 1rem 1.5rem 1rem;
-    order: 4;   //reorder li (logo - login - search - links)
-  }
-  .c-nav-up-li-search, .c-nav-up-li-login{
-    padding: 1rem;
-  }
   .c-nav-up__li-logo{
     padding: 0 1rem 0 1rem;
+    order: 1;     //reorder li (logo - login - search - links)
+  }
+  .c-nav-up-li-login{
+    padding: 1rem;
+    order: 2;
+  }
+  .c-nav-up-li-search{
+    padding: 1rem;
+    order: 3;
+  }
+  .c-nav-up-li{
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    order: 4;
   }
 }
-@media (min-width: 928px) and (max-width: 1023px) { // TABLET bigger
+@include mq($from: mob, $until: tab-s-nav) {  //TABLET smaller
+  .c-nav-up-li{
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    order: 3;
+  }
+  .c-nav-up-li-search{
+    order: 4;
+  }
+}
+@include mq($from: tab-s-nav, $until: tab-m-nav) {  //TABLET medium
+  .c-nav-up-li{
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  }
+  .c-nav-up-li-search{
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .c-nav-up-li-login{
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .c-nav-up__li-logo{
+    padding: 0 0.5rem 0 0.5rem;
+  }
+}
+@include mq($from: tab-b-nav, $until: tab) {  //TABLET bigger
   .c-nav-up-li-search, .c-nav-up-li-login{
     padding: 1rem 2rem 1rem 2rem;
   }
@@ -134,61 +161,7 @@
     padding: 0 2rem 0 2rem;
   }
 }
-@media (min-width: 707px) and (max-width: 755px) { // TABLET smaller
-  .c-nav-up-li{
-    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
-    order: 4;
-  }
-  .c-nav-up-li-search{
-    padding: 1rem 0.5rem 1rem 0.5rem;
-    order: 3;
-  }
-  .c-nav-up-li-login{
-    padding: 1rem 0.5rem 1rem 0.5rem;
-    order: 2;
-  }
-  .c-nav-up__li-logo{
-    padding: 0 0.5rem 0 0.5rem;
-    order: 1;
-  }
-}
-@media (min-width: 676px) and (max-width: 707px) { // TABLET the smallest
-  .c-nav-up-li{
-    padding: 1.5rem 1rem 1.5rem 1rem;
-    order: 4;
-  }
-  .c-nav-up-li-search{
-    padding: 1rem 0.5rem 1rem 0;
-    order: 3;
-  }
-  .c-nav-up-li-login{
-    padding: 1rem 0 1rem 0;
-    order: 2;
-  }
-  .c-nav-up__li-logo{
-    padding: 0 0 0 0.5rem;
-    order: 1;
-  }
-}
-@media (min-width: 600px) and (max-width: 675px) { // TABLET the smallest
-  .c-nav-up-li{
-    padding: 1.5rem 2rem 1.5rem 2rem;
-    order: 3;
-  }
-  .c-nav-up-li-search{
-    padding: 1rem 1rem 1rem 1rem;
-    order: 4;
-  }
-  .c-nav-up-li-login{
-    padding: 1rem 1rem 1rem 1rem;
-    order: 2;
-  }
-  .c-nav-up__li-logo{
-    padding: 0 1rem 0 1rem;
-    order: 1;
-  }
-}
-@media (min-width: 1024px) {    // COMPUTER
+@include mq($from: tab) {  //COMPUTER
   .c-nav-up{
     margin: auto;  //horizontal alignment to center for whole up menu
     width: 100%;
@@ -206,7 +179,7 @@
     padding: 0 1rem 0 1rem;
   }
 }
-@media (min-width: 1024px) and (max-width: 1220px) {    // COMPUTER smaller
+@include mq($from: tab, $until: com-s-nav) {  //COMPUTER smaller
   .c-nav-up-li{
     order: 4;
     padding: 1.5rem 5rem 1.5rem 5rem;

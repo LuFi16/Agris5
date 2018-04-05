@@ -17,7 +17,28 @@ $mq-breakpoints: (
         mobile: $mobile,
         tablet: $tablet,
         desktop: $desktop,
-        wide: $wide);
+        wide: $wide,
+        mob: 600px,
+        tab: 1024px,
+        com-s: 1280px,
+        com-b: 1325px,
+
+        tab-s-nav: 707px,
+        tab-m-nav: 755px,
+        tab-b-nav: 928px,
+        com-s-nav: 1220px);
+/*
+MOBILE - max-width: 599px
+TABLET - min-width: 600px and max-width: 1023px
+COMPUTER - min-width: 1024px
+COMPUTER SMALL - min-width: 1024px and max-width: 1280px
+COMPUTER BIGGER - min-width: 1325px
+
+mobile:  320px
+tablet:  740px
+desktop: 980px
+wide:    1300px
+*/
 @import "../bower_components/sass-mq/mq";
 
 // GENERIC
@@ -65,11 +86,8 @@ $mq-breakpoints: (
 //@import "../bower_components/lato-fontface/scss/lato"; // should be included only used ones in implementation
 
 
-
-
 // COMPONENTS
 @import "components/components.colors";
-
 @import "components/components.articles";
 @import "components/components.footer";
 @import "components/components.header";

@@ -38,7 +38,8 @@
 .c-main__about:hover{
   background: transparentize($color-agris-green, 0.9);
 }
-@media (max-width: 599px) {   // MOBILE
+
+@include mq($until: mob) {  //MOBILE
   .c-main__text{
     display: none;
   }
@@ -47,7 +48,7 @@
     line-height: 2;
   }
 }
-@media (min-width: 1024px) {    // COMPUTER
+@include mq($from: tab) {  //COMPUTER
   .c-main__text{
     padding: 0 7rem 0 7rem;
   }
