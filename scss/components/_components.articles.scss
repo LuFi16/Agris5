@@ -87,7 +87,6 @@ $width-min-article: 10rem;
   border-top: 1px solid $color-article-border;
   padding: 2rem 1rem 1rem 1rem;
 }
-
 .c-article__authors{
   padding: 2rem 1rem 1rem 1rem;
 }
@@ -109,40 +108,37 @@ $width-min-article: 10rem;
   color: $color-login-font;
 }
 
-@include mq($until: mob) {  //MOBILE
+/*@include mq($until: mob) {  //MOBILE
   .c-body{
-    background: coral;  //for testing
+  background: coral;  //for testing
   }
 }
 @include mq($from: mob, $until: tab) {  //TABLET
   .c-body{
     background: olive;  //for testing
   }
-}
+}*/
 @include mq($from: tab) {  //COMPUTER
-  .c-body{
-    background: lightseagreen;  //for testing
-  }
+  /*.c-body{
+  background: lightseagreen;  //for testing
+  }*/
   .c-article{
     max-width: $width-max-article;
     min-width: $width-min-article;
   }
 }
 @include mq($from: tab, $until: com-s) {  //COMPUTER small
-  .c-body{
+  /*.c-body{
     background: cornflowerblue;  //for testing
-  }
-  .c-article{
-    max-width: 40rem;
-  }
+  }*/
   .c-articles{
     max-width: 40rem;
   }
 }
 @include mq($from: com-b) {  //COMPUTER big
-  .c-body{
+  /*.c-body{
     background: cadetblue;  //for testing
-  }
+  }*/
   .c-article{
     display: grid;
     grid-template-columns: repeat(6, 1fr);

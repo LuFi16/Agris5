@@ -2958,32 +2958,33 @@ table {
   text-decoration: none;
   color: white; }
 
-@media (max-width: 37.49em) {
-  .c-body {
-    background: coral; } }
-@media (min-width: 37.5em) and (max-width: 63.99em) {
-  .c-body {
-    background: olive; } }
+/*@include mq($until: mob) {  //MOBILE
+  .c-body{
+  background: coral;  //for testing
+  }
+}
+@include mq($from: mob, $until: tab) {  //TABLET
+  .c-body{
+    background: olive;  //for testing
+  }
+}*/
 @media (min-width: 64em) {
-  .c-body {
-    background: lightseagreen; }
-
+  /*.c-body{
+  background: lightseagreen;  //for testing
+  }*/
   .c-article {
     max-width: 80rem;
     min-width: 10rem; } }
 @media (min-width: 64em) and (max-width: 79.99em) {
-  .c-body {
-    background: cornflowerblue; }
-
-  .c-article {
-    max-width: 40rem; }
-
+  /*.c-body{
+    background: cornflowerblue;  //for testing
+  }*/
   .c-articles {
     max-width: 40rem; } }
 @media (min-width: 82.8125em) {
-  .c-body {
-    background: cadetblue; }
-
+  /*.c-body{
+    background: cadetblue;  //for testing
+  }*/
   .c-article {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
