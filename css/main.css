@@ -491,7 +491,7 @@ dd, ol, ul {
  * 1. Set the default `font-size` and `line-height` for the entire project,
  *    sourced from our default variables. The `font-size` is calculated to exist
  *    in ems, the `line-height` is calculated to exist unitlessly.
- * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ * 2. Force scrollbars to always be visible to prevent awkward ÔÇśjumpsÔÇÖ when
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
@@ -563,7 +563,7 @@ img {
   /* [3] */ }
 
 /**
- * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ * 1. If a `width` and/or `height` attribute have been explicitly defined, letÔÇÖs
  *    not make the image fluid.
  */
 img[width],
@@ -3032,6 +3032,40 @@ table {
 .c-footer__address {
   text-align: left;
   padding-left: 0.5rem; }
+
+.c-form {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column; }
+
+.c-form__heading {
+  font-size: 1.2rem; }
+
+.c-form__text {
+  font-size: 1rem; }
+
+.c-form__ul {
+  display: flex;
+  flex-direction: column;
+  width: 27rem; }
+
+.c-form__li {
+  list-style-type: none;
+  padding-bottom: 0.3rem;
+  display: inline-flex;
+  justify-content: space-between; }
+
+.c-form__li-btn {
+  justify-content: flex-end; }
+
+.c-form__input {
+  width: 270px; }
+
+.c-form__btn {
+  width: 270px; }
+
+.c-form__textarea {
+  height: 3rem; }
 
 .c-header {
   padding: 0; }
