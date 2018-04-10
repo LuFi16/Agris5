@@ -24,8 +24,7 @@
 .c-form__li-btn{
   justify-content: flex-end;
 }
-.c-form__title{
-}
+.c-form__title{  }
 .c-form__input{
   width: 270px;
 }
@@ -40,4 +39,7 @@
   padding-left: 10.65rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+}
+.c-form__a{
+  color: $color-agris-green;
 }

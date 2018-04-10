@@ -3090,6 +3090,9 @@ table {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem; }
 
+.c-form__a {
+  color: #038000; }
+
 .c-header {
   padding: 0; }
 
@@ -3427,5 +3430,35 @@ table {
   .c-nav-up__li-logo {
     order: 1;
     padding: 0 3rem 0 3rem; } }
+.c-text {
+  padding: 2rem; }
+
+.c-text__heading {
+  font-size: 1.2rem; }
+
+@media (max-width: 47.1775em) {
+  .c-text__list {
+    column-count: 1; } }
+@media (min-width: 47.1875em) and (max-width: 63.99em) {
+  .c-text__list {
+    column-count: 2;
+    list-style-position: inside; } }
+@media (min-width: 64em) {
+  .c-text {
+    max-width: 80rem;
+    min-width: 10rem; }
+
+  .c-text__list {
+    column-count: 2;
+    list-style-position: inside; } }
+@media (min-width: 64em) and (max-width: 79.99em) {
+  .c-text {
+    max-width: 40rem; }
+
+  .c-text__list {
+    column-count: 1; } }
+@media (min-width: 80em) and (max-width: 99.99em) {
+  .c-text {
+    max-width: 60rem; } }
 
 /*# sourceMappingURL=main.css.map */

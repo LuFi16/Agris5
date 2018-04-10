@@ -1,0 +1,42 @@
+
+.c-text{
+  padding: 2rem;
+}
+.c-text__heading{
+  font-size: 1.2rem;
+}
+
+@include mq($until: tab-m-nav) {  //MOBILE and TABLET
+  .c-text__list{
+    column-count: 1;
+  }
+}
+@include mq($from: tab-m-nav, $until: tab) {  //TABLET
+  .c-text__list{
+    column-count: 2;
+    list-style-position: inside;
+  }
+}
+@include mq($from: tab) {  //COMPUTER
+  .c-text{
+    max-width: 80rem;
+    min-width: 10rem;
+  }
+  .c-text__list{
+    column-count: 2;
+    list-style-position: inside;
+  }
+}
+@include mq($from: tab, $until: com-s) {  //COMPUTER small
+  .c-text{
+    max-width: 40rem;
+  }
+  .c-text__list{
+    column-count: 1;
+  }
+}
+@include mq($from: com-s, $until: com-bb) {  //COMPUTER medium
+  .c-text{
+    max-width: 60rem;
+  }
+}

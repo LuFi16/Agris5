@@ -22,6 +22,7 @@ $mq-breakpoints: (
         tab: 1024px,
         com-s: 1280px,
         com-b: 1325px,
+        com-bb: 1600px,
 
         tab-s-nav: 707px,
         tab-m-nav: 755px,
@@ -94,3 +95,4 @@ wide:    1300px
 @import "components/components.header";
 @import "components/components.nav-side";
 @import "components/components.nav-up";
+@import "components/components.text";
