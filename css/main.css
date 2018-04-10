@@ -491,7 +491,7 @@ dd, ol, ul {
  * 1. Set the default `font-size` and `line-height` for the entire project,
  *    sourced from our default variables. The `font-size` is calculated to exist
  *    in ems, the `line-height` is calculated to exist unitlessly.
- * 2. Force scrollbars to always be visible to prevent awkward ÔÇśjumpsÔÇÖ when
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
@@ -563,7 +563,7 @@ img {
   /* [3] */ }
 
 /**
- * 1. If a `width` and/or `height` attribute have been explicitly defined, letÔÇÖs
+ * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
  *    not make the image fluid.
  */
 img[width],
@@ -3083,6 +3083,12 @@ table {
 
 .c-form__textarea {
   height: 3rem; }
+
+.c-form__li-checkbox {
+  list-style-type: none;
+  padding-left: 10.65rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem; }
 
 .c-header {
   padding: 0; }
