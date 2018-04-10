@@ -3430,15 +3430,34 @@ table {
   .c-nav-up__li-logo {
     order: 1;
     padding: 0 3rem 0 3rem; } }
+.c-bold {
+  font-weight: bold; }
+
+.c-2columns {
+  column-count: 2; }
+
 .c-text {
   padding: 2rem; }
 
 .c-text__heading {
   font-size: 1.2rem; }
 
+.c-text__text {
+  font-size: 1rem; }
+
 @media (max-width: 47.1775em) {
   .c-text__list {
     column-count: 1; } }
+@media (min-width: 44.1875em) {
+  .c-text__contacts-people {
+    column-count: 2; }
+
+  .c-text__cont-link {
+    width: 80rem;
+    align-items: center; }
+
+  .c-text__contacts {
+    text-align: center; } }
 @media (min-width: 47.1875em) and (max-width: 63.99em) {
   .c-text__list {
     column-count: 2;
