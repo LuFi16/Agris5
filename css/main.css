@@ -3445,6 +3445,15 @@ table {
 .c-text__text {
   font-size: 1rem; }
 
+.c-text__archive {
+  list-style-type: none; }
+
+.c-text__a {
+  color: #038000; }
+
+.c-text__archive-heading {
+  margin: 0; }
+
 @media (max-width: 47.1775em) {
   .c-text__list {
     column-count: 1; } }

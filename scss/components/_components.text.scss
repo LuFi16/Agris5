@@ -14,7 +14,15 @@
 .c-text__text{
   font-size: 1rem;
 }
-
+.c-text__archive{
+  list-style-type: none;
+}
+.c-text__a{
+  color: $color-agris-green;
+}
+.c-text__archive-heading{
+  margin: 0;
+}
 
 @include mq($until: tab-m-nav) {  //MOBILE and TABLET
   .c-text__list{
