@@ -1,0 +1,25 @@
+
+.c-text__table{
+  background: $color-article;
+  padding: 0 2rem 0 2rem;
+}
+.c-table__td-first{
+  padding-right: 3rem;
+  padding-left: 0.5rem;
+  vertical-align: top;
+  color: $color-table-th;
+  text-align: left;
+}
+.c-table__s-td{
+  width: 20%;
+}
+.c-table__border-bottom{
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.c-table__last-row{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}

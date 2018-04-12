@@ -3430,6 +3430,29 @@ table {
   .c-nav-up__li-logo {
     order: 1;
     padding: 0 3rem 0 3rem; } }
+.c-text__table {
+  background: white;
+  padding: 0 2rem 0 2rem; }
+
+.c-table__td-first {
+  padding-right: 3rem;
+  padding-left: 0.5rem;
+  vertical-align: top;
+  color: grey;
+  text-align: left; }
+
+.c-table__s-td {
+  width: 20%; }
+
+.c-table__border-bottom {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+
+.c-table__last-row {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
 .c-bold {
   font-weight: bold; }
 
