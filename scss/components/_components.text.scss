@@ -5,8 +5,20 @@
 .c-2columns{
   column-count: 2;
 }
+
+/*.c-article{
+  background: $color-article;
+  margin: 0 1rem 1rem 1rem;
+  border: 1px solid $color-article-border;
+}*/
+
 .c-text{
-  padding: 2rem;
+  padding: 5rem;
+  background: $color-article;
+  border-left: 1px solid $color-article-border;
+  border-right: 1px solid $color-article-border;
+  margin: 0 auto 0 auto;
+  width: 100%;
 }
 .c-text__heading{
   font-size: 1.2rem;

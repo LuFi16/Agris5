@@ -1,7 +1,7 @@
 
 .c-text__table{
   background: $color-article;
-  padding: 0 2rem 0 2rem;
+  padding: 0 1rem 0 1rem;
 }
 .c-table__td-first{
   padding-right: 3rem;
@@ -21,5 +21,22 @@
 .c-table__last-row{
   padding-top: 1rem;
   padding-bottom: 1rem;
-
 }
+
+.c-table__archive{
+  width: auto;
+  min-width: 15rem;
+  border: 1px solid $color-article-border;
+}
+.c-table__archive-cell{
+  padding: 0.3rem 1rem 0.3rem 1rem;
+}
+.c-table__archive-align-left{
+  text-align: left;
+}
+.c-table__archive-th-main{
+  background: transparentize($color-agris-green, 0.5);
+}
+//.c-text__archive{
+//  column-count: 3;
+//}                     for many years

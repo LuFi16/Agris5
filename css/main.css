@@ -3053,7 +3053,6 @@ table {
   padding-left: 0.5rem; }
 
 .c-form {
-  margin: 2rem;
   display: flex;
   flex-direction: column; }
 
@@ -3070,18 +3069,24 @@ table {
 
 .c-form__li {
   list-style-type: none;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
   display: inline-flex;
   justify-content: space-between; }
+  .c-form__li label {
+    padding: 0.4rem 0 0.4rem 0; }
 
 .c-form__li-btn {
   justify-content: flex-end; }
 
 .c-form__input {
-  width: 270px; }
+  width: 270px;
+  padding: 0.4rem;
+  font-family: Calibri, sans-serif; }
 
 .c-form__btn {
-  width: 270px; }
+  width: 270px;
+  padding: 0.4rem;
+  font-family: Calibri, sans-serif; }
 
 .c-form__textarea {
   height: 3rem; }
@@ -3095,6 +3100,9 @@ table {
 .c-form__a {
   color: #038000; }
 
+/*.c-form__input:required{
+  background: red;
+}*/
 .c-header {
   padding: 0; }
 
@@ -3436,7 +3444,7 @@ table {
     padding: 0 3rem 0 3rem; } }
 .c-text__table {
   background: white;
-  padding: 0 2rem 0 2rem; }
+  padding: 0 1rem 0 1rem; }
 
 .c-table__td-first {
   padding-right: 3rem;
@@ -3457,14 +3465,38 @@ table {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
+.c-table__archive {
+  width: auto;
+  min-width: 15rem;
+  border: 1px solid #e0e0e0; }
+
+.c-table__archive-cell {
+  padding: 0.3rem 1rem 0.3rem 1rem; }
+
+.c-table__archive-align-left {
+  text-align: left; }
+
+.c-table__archive-th-main {
+  background: rgba(3, 128, 0, 0.5); }
+
 .c-bold {
   font-weight: bold; }
 
 .c-2columns {
   column-count: 2; }
 
+/*.c-article{
+  background: $color-article;
+  margin: 0 1rem 1rem 1rem;
+  border: 1px solid $color-article-border;
+}*/
 .c-text {
-  padding: 2rem; }
+  padding: 5rem;
+  background: white;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  margin: 0 auto 0 auto;
+  width: 100%; }
 
 .c-text__heading {
   font-size: 1.2rem; }

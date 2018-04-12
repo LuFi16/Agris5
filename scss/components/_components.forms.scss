@@ -1,14 +1,13 @@
 
 .c-form{
-  margin: 2rem;
   display: flex;
   flex-direction: column;
 }
 .c-form__heading{
-  font-size: 1.2rem;
+  font-size: 1.2rem;  //h1
 }
 .c-form__text{
-  font-size: 1rem;
+  font-size: 1rem;  //h2
 }
 .c-form__ul{
   display: flex;
@@ -17,19 +16,26 @@
 }
 .c-form__li{
   list-style-type: none;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
   display: inline-flex;
   justify-content: space-between;
+  //align-items: center;
+  label{
+    padding: 0.4rem 0 0.4rem 0;
+  }
 }
 .c-form__li-btn{
   justify-content: flex-end;
 }
-.c-form__title{  }
 .c-form__input{
   width: 270px;
+  padding: 0.4rem;
+  font-family: Calibri, sans-serif;
 }
 .c-form__btn{
   width: 270px;
+  padding: 0.4rem;
+  font-family: Calibri, sans-serif;
 }
 .c-form__textarea{
   height: 3rem;
@@ -45,4 +51,7 @@
 }
 
 
+/*.c-form__input:required{
+  background: red;
+}*/
 
