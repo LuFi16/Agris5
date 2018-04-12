@@ -3,6 +3,7 @@ $width-side-menu: 20rem;
 .c-nav-side{
   background: $color-side-menu;
   padding: 0;
+  border-right: 1px solid $color-nav-side-border;
 }
 .c-nav-side__ul-menu{
   padding: 0;
@@ -30,6 +31,7 @@ $width-side-menu: 20rem;
   background: $color-keywords;
   border-top: solid 1px $color-agris-green;
   border-bottom: solid 1px $color-agris-green;
+  border-right: 1px solid $color-nav-side-border;
   padding: 1rem 0 1rem 0;
   margin: 0;
 }

@@ -2857,7 +2857,8 @@ table {
 
 .c-body {
   background: #f1f1f1;
-  font-family: Calibri, sans-serif; }
+  font-family: Calibri, sans-serif;
+  font-size: 16px; }
 
 .c-articles {
   display: flex;
@@ -3037,7 +3038,8 @@ table {
   background: #dedede;
   padding: 1rem 0 0 1rem;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  border-top: 1px solid grey; }
 
 .c-footer__p {
   margin: 1rem; }
@@ -3144,7 +3146,8 @@ table {
     width: 30rem; } }
 .c-nav-side {
   background: white;
-  padding: 0; }
+  padding: 0;
+  border-right: 1px solid grey; }
 
 .c-nav-side__ul-menu {
   padding: 0;
@@ -3172,6 +3175,7 @@ table {
   background: #ededed;
   border-top: solid 1px #038000;
   border-bottom: solid 1px #038000;
+  border-right: 1px solid grey;
   padding: 1rem 0 1rem 0;
   margin: 0; }
 

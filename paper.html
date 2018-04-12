@@ -3,8 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agris-online</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -163,30 +161,55 @@
             </ul>
         </nav>
 
-        <form class="c-form">
-            <h1 class="c-form__heading">Login form</h1>
-            <h2 class="c-form__text">Please, use the same login for log-in in the both roles (author, reviewer).</h2>
-            <ul class="c-form__ul">
-                <li class="c-form__li row">   <!--required could be add-->
-                    <label class="c-form__title">Login name:</label>
-                    <input class="c-form__input" type="text" placeholder="johnsmith">
-                </li>
-                <li class="c-form__li row">
-                    <label class="c-form__title">Enter password:</label>
-                    <input class="c-form__input" type="text" placeholder="********">
-                </li>
-                <li class="c-form__li-checkbox">
-                    <input type="checkbox" title="Remember me" />
-                    <label>Remember me</label>
-                </li>
-                <li class="c-form__li c-form__li-btn row">
-                    <button class="c-form__btn" type="submit">Submit</button>
-                </li>
-            </ul>
-            <p>
-                <a class="c-form__a" href="#">Don't have an account yet? Sing up.</a>
-            </p>
-        </form>
+
+
+        <div class="c-text">
+
+            <form class="c-form">
+                <h1 class="c-form__heading">New paper</h1>
+                <h2 class="c-form__text">Items with * are required.</h2>
+
+                <ul class="c-form__ul">
+                    <li class="c-form__li row">   <!--required could be add-->
+                        <label>Title of paper:</label>
+                        <input class="c-form__input" type="text" placeholder="" required>
+                    </li>
+                    <li class="c-form__li row">
+                        <label>Co-authors:</label>
+                        <input class="c-form__input" type="text" placeholder="SURNAME, Firsname; etc.">
+                    </li>
+                    <li class="c-form__li row">
+                        <label>Abstract:</label>
+                        <textarea class="c-form__input c-form__textarea" placeholder="" required></textarea>
+                    </li>
+                    <li class="c-form__li row">
+                        <label>Key Words:</label>
+                        <textarea class="c-form__input c-form__textarea" placeholder="" required></textarea>
+                    </li>
+                    <li class="c-form__li row">
+                        <label>AGROVOC Key Words:</label>
+                        <input list="AGROVOC" />
+                        <datalist class="c-form__input" title="AGROVOC" required>  <!-- value="x" specifies the value to be sent to the server -->
+                            <option>Economics</option>
+                            <option>Informatics</option>
+                            <option>Information</option>
+                            <option>Learning</option>
+                            <option>News</option>
+                            <option>Research</option>
+                        </datalist>
+                    </li>
+                    <li class="c-form__li c-form__li-btn row">
+                        <button class="c-form__btn" type="submit">Choose File</button>
+                    </li>
+                    <li class="c-form__li c-form__li-btn row">
+                        <button class="c-form__btn" type="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+
+
 
     </div>
 </main>
