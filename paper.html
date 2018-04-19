@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agris-online</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -188,14 +190,14 @@
                     </li>
                     <li class="c-form__li row">
                         <label>AGROVOC Key Words:</label>
-                        <input list="AGROVOC" />
-                        <datalist class="c-form__input" title="AGROVOC" required>  <!-- value="x" specifies the value to be sent to the server -->
-                            <option>Economics</option>
-                            <option>Informatics</option>
-                            <option>Information</option>
-                            <option>Learning</option>
-                            <option>News</option>
-                            <option>Research</option>
+                        <input list="AGROVOC" title="AGROVOC Key Words" placeholder="" class="c-form__input">
+                        <datalist id="AGROVOC">
+                            <option value="Economics">
+                            <option value="Informatics">
+                            <option value="Information">
+                            <option value="Learning">
+                            <option value="News">
+                            <option value="Research">
                         </datalist>
                     </li>
                     <li class="c-form__li c-form__li-btn row">

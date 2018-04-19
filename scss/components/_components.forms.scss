@@ -19,7 +19,6 @@
   padding-bottom: 0.5rem;
   display: inline-flex;
   justify-content: space-between;
-  //align-items: center;
   label{
     padding: 0.4rem 0 0.4rem 0;
   }
@@ -31,11 +30,19 @@
   width: 270px;
   padding: 0.4rem;
   font-family: Calibri, sans-serif;
+  background: transparentize($color-agris-green, 0.9);
+  border: none;
 }
 .c-form__btn{
   width: 270px;
   padding: 0.4rem;
   font-family: Calibri, sans-serif;
+  background: transparentize($color-agris-green, 0.4);
+  border: none;
+  color: darken($color-agris-green, 5);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .c-form__textarea{
   height: 3rem;
@@ -48,6 +55,19 @@
 }
 .c-form__a{
   color: $color-agris-green;
+}
+
+@include mq($until: mob) {  //MOBILE
+  .c-form__li{
+    display: flex;
+    flex-direction: column;
+  }
+  .c-form__li-checkbox{
+    padding-left: 0;
+  }
+  .c-form__ul{
+    width: auto;
+  }
 }
 
 

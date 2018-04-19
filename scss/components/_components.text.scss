@@ -2,15 +2,6 @@
 .c-bold{
   font-weight: bold;
 }
-.c-2columns{
-  column-count: 2;
-}
-
-/*.c-article{
-  background: $color-article;
-  margin: 0 1rem 1rem 1rem;
-  border: 1px solid $color-article-border;
-}*/
 
 .c-text{
   padding: 5rem;
@@ -35,28 +26,43 @@
 .c-text__archive-heading{
   margin: 0;
 }
+.c-text__contact{
+  background: transparentize($color-agris-green, 0.9);
+  padding: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+  p{
+    margin: 0;
+  }
+  box-shadow: 2px 2px 10px grey;
+  width: 20rem;
+  text-align: center;
+}
+.c-text__contacts-department{
+  background: transparentize($color-agris-green, 0.9);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.c-text__contacts-people{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.c-text__contacts{
+  text-align: center;
+}
 
-@include mq($until: tab-m-nav) {  //MOBILE and TABLET
-  .c-text__list{
-    column-count: 1;
+@include mq($until: mob) {  //MOBILE
+  .c-text{
+    padding: 1.5rem;
   }
 }
-@include mq($from: tab-s-nav) {  //from small TABLET
+@include mq($until: tab-m-nav) {  //MOBILE and TABLET
   .c-text__contacts-people{
-    column-count: 2;
-  }
-  .c-text__cont-link{
-    width: 80rem;
+    flex-direction: column;
     align-items: center;
   }
-  .c-text__contacts{
-    text-align: center;
-  }
-}
-@include mq($from: tab-m-nav, $until: tab) {  //TABLET
-  .c-text__list{
-    column-count: 2;
-    list-style-position: inside;
+  .c-text__contact{
+    width: 16rem;
   }
 }
 @include mq($from: tab) {  //COMPUTER
@@ -64,17 +70,17 @@
     max-width: 80rem;
     min-width: 10rem;
   }
-  .c-text__list{
-    column-count: 2;
-    list-style-position: inside;
-  }
 }
 @include mq($from: tab, $until: com-s) {  //COMPUTER small
   .c-text{
     max-width: 40rem;
   }
-  .c-text__list{
-    column-count: 1;
+  .c-text__contacts-people{
+    flex-direction: column;
+    align-items: center;
+  }
+  .c-text__contact{
+    margin: 0 0.5rem 2rem 0.5rem;
   }
 }
 @include mq($from: com-s, $until: com-bb) {  //COMPUTER medium

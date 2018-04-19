@@ -1,20 +1,21 @@
 
 .c-text__table{
-  background: $color-article;
+  //background: $color-article;
+  background: transparentize($color-agris-green, 0.98);
   padding: 0 1rem 0 1rem;
 }
 .c-table__td-first{
   padding-right: 3rem;
   padding-left: 0.5rem;
   vertical-align: top;
-  color: $color-table-th;
+  color: $color-agris-green;
   text-align: left;
 }
 .c-table__s-td{
   width: 20%;
 }
 .c-table__border-bottom{
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid transparentize($color-agris-green, 0.9);
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
@@ -37,6 +38,22 @@
 .c-table__archive-th-main{
   background: transparentize($color-agris-green, 0.5);
 }
+
+@include mq($until: mob) {  //MOBILE
+  .c-text__table{
+    table, th, td, tr, thead, tbody {     //change columns and rows in table to "card"
+      display: block;
+    }
+  }
+
+  .c-table__td-first{
+    border-bottom: 1px solid transparentize($color-agris-green, 0.9);
+  }
+  .c-table__s-td{
+    width: auto;
+  }
+}
+
 //.c-text__archive{
 //  column-count: 3;
-//}                     for many years
+//}                     optional for many years
