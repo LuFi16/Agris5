@@ -23,6 +23,13 @@
     padding: 0.4rem 0 0.4rem 0;
   }
 }
+/*[data-required]::after {
+  content: ' *';            //optional
+}*/
+[data-nonrequired] {
+  color: $color-non_required;
+}
+
 .c-form__li-btn{
   justify-content: flex-end;
 }
@@ -33,6 +40,7 @@
   background: transparentize($color-agris-green, 0.9);
   border: none;
 }
+
 .c-form__btn{
   width: 270px;
   padding: 0.4rem;
@@ -53,6 +61,8 @@
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 }
+
+
 .c-form__a{
   color: $color-agris-green;
 }

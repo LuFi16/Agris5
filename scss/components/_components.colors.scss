@@ -1,17 +1,31 @@
-$color-header: white;
+
 $color-agris-green: #038000;
-$color-footer: #dedede;
 $color-background: #f1f1f1;
-$color-keywords: #ededed;
-$color-menu: #f8f8f8;
 $color-text: black;
+$color-text-invert: white;
+$color-non_required: grey;
+
+$color-footer: #dedede;
+$color-address-line: #bfbfbf;
+$color-table-th: grey;
+$color-search: #dedede;
+$color-search-border: #dedede;
+$color-archive-border: #e0e0e0;
+
+/*HEADER colors*/
 $color-introduction-back: grey;
-$color-introduction: white;
-$color-download-border: black;
-$color-article-border: #e0e0e0;
+$color-more_information: white;
+
+/*MENU UP and SIDE colors*/
+$color-menu: #f8f8f8;
+$color-nav-side-border: #d9d9d9;
 $color-nav-side-line: #dedede;
 $color-side-menu: white;
-$color-article: white;
-$color-login-font: white;
-$color-table-th: grey;
-$color-nav-side-border: grey;
+$color-nav-side-bg: #ededed;
+$color-up-menu: white;
+
+/*ARTICLE colors*/
+$color-keywords: #ededed;
+$color-article-bg: white;
+$color-download-border: black;
+$color-article-border: #e0e0e0;

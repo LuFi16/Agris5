@@ -79,7 +79,7 @@ $width-min-article: 10rem;
   background: transparentize($color-agris-green, 0.9);
 }
 .c-article{
-  background: $color-article;
+  background: $color-article-bg;
   margin: 0 1rem 1rem 1rem;
   border: 1px solid $color-article-border;
 }
@@ -112,29 +112,20 @@ $width-min-article: 10rem;
 }
 .c-article__pdf-a{
   text-decoration: none;
-  color: $color-login-font;
+  color: $color-text-invert;
 }
 
 @include mq($until: mob) {  //MOBILE
- /* .c-body{
-  background: coral;  //for testing
-  }*/
   .c-article__abstract{
   border-bottom: 1px solid $color-article-border;
   }
 }
 @include mq($from: mob, $until: tab) {  //TABLET
-  /*.c-body{
-    background: olive;  //for testing
-  }*/
   .c-article__abstract{
     border-bottom: 1px solid $color-article-border;
   }
 }
 @include mq($from: tab) {  //COMPUTER
-  /*.c-body{
-  background: lightseagreen;  //for testing
-  }*/
   .c-article{
     max-width: $width-max-article;
     min-width: $width-min-article;
@@ -153,21 +144,15 @@ $width-min-article: 10rem;
   }
 }
 @include mq($from: tab, $until: com-s) {  //COMPUTER small
-  /*.c-body{
-    background: cornflowerblue;  //for testing
-  }*/
   .c-articles{
     max-width: 40rem;
   }
 }
 @include mq($from: com-b) {  //COMPUTER big
-  /*.c-body{
-    background: cadetblue;  //for testing
-  }*/
   .c-article{
     display: grid;
     grid-template-columns: repeat(6, auto);
-    grid-template-rows: repeat(4, auto);   //changing % doesn't change functionality
+    grid-template-rows: repeat(4, auto);
   }
   .c-article__tittle{
     grid-column: 1/7;

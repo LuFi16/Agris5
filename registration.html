@@ -169,15 +169,15 @@
                 <h2 class="c-form__text">Please, use the same login for log-in in the both roles (author, reviewer).</h2>
                 <ul class="c-form__ul">
                     <li class="c-form__li row">   <!--required could be add-->
-                        <label>Firstname:</label>
+                        <label data-required>Firstname:</label>
                         <input class="c-form__input" type="text" placeholder="John" required>
                     </li>
                     <li class="c-form__li row">
-                        <label>Surname:</label>
+                        <label data-required>Surname:</label>
                         <input class="c-form__input" type="text" placeholder="Smith" required>
                     </li>
                     <li class="c-form__li row">
-                        <label>Title:</label>
+                        <label data-required>Title:</label>
                         <select class="c-form__input" title="Title" required>  <!-- value="x" specifies the value to be sent to the server -->
                             <option value="mr" selected="selected">Mr.</option>
                             <option value="ms">Ms.</option>
@@ -187,11 +187,11 @@
                         </select>
                     </li>
                     <li class="c-form__li row">
-                        <label>Email:</label>
+                        <label data-required>Email:</label>
                         <input class="c-form__input" type="email" placeholder="john.smith@pef.czu.cz" required>
                     </li>
                     <li class="c-form__li row">
-                        <label>Country:</label>
+                        <label data-required>Country:</label>
                         <select class="c-form__input" title="Country" required>  <!-- value="x" specifies the value to be sent to the server -->
                             <option value="AF">Afghanistan</option>
                             <option value="AX">Åland Islands</option>
@@ -445,23 +445,23 @@
                         </select>
                     </li>
                     <li class="c-form__li row">
-                        <label>Institution:</label>
+                        <label data-nonrequired>Institution:</label>
                         <textarea class="c-form__input c-form__textarea" placeholder="Czech University of Life Sciences Prague"></textarea>
                     </li>
                     <li class="c-form__li row">
-                        <label>Address:</label>
+                        <label data-nonrequired>Address:</label>
                         <textarea class="c-form__input c-form__textarea" placeholder="Kamýcká 129, 165 00 Praha 6 - Suchdol, Czech Republic"></textarea>
                     </li>
                     <li class="c-form__li row">
-                        <label>Login name:</label>
+                        <label data-required>Login name:</label>
                         <input class="c-form__input" type="text" placeholder="johnsmith" required>
                     </li>
                     <li class="c-form__li row">
-                        <label>Enter password:</label>
+                        <label data-required>Enter password:</label>
                         <input class="c-form__input" type="text" placeholder="********" required>
                     </li>
                     <li class="c-form__li row">
-                        <label>Re-enter password:</label>
+                        <label data-required>Re-enter password:</label>
                         <input class="c-form__input" type="text" placeholder="********" required>
                     </li>
                     <li class="c-form__li c-form__li-btn row">

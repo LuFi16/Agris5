@@ -1,4 +1,3 @@
-$width-side-menu: 20rem;
 
 .c-nav-side{
   background: $color-side-menu;
@@ -9,6 +8,7 @@ $width-side-menu: 20rem;
   padding: 0;
   margin: 0;
 }
+
 .c-nav-side__li{
   list-style-type: none;
   padding: 0.5rem 2rem 0.5rem 2rem;
@@ -21,22 +21,22 @@ $width-side-menu: 20rem;
   text-decoration: none;
   color: $color-text;
 }
+
 .c-nav-side__a-main{
   color: $color-text;
 }
 .c-nav-side__li:hover{
   background: transparentize($color-agris-green, 0.9);
 }
+.c-nav-side__li:active{
+   background: transparentize($color-agris-green, 0.8);
+ }
 .c-nav-side__heading{
-  background: $color-keywords;
+  background: $color-nav-side-bg;
   border-top: solid 1px $color-agris-green;
   border-bottom: solid 1px $color-agris-green;
-  border-right: 1px solid $color-nav-side-border;
   padding: 1rem 0 1rem 0;
   margin: 0;
-}
-.c-nav-side__heading:hover{
-  background: transparentize($color-agris-green, 0.8);
 }
 .c-nav-side__heading-content{
   border-top: none;
@@ -95,17 +95,9 @@ $width-side-menu: 20rem;
   }
 }
 @include mq($from: tab) {  //COMPUTER
-  .c-nav-side{
-    max-width: $width-side-menu;
-  }
+
   .c-nav-side__li{
     text-align: left;
-  }
-  .c-nav-side__heading{
-    width: $width-side-menu;
-  }
-  .c-nav-side__ul-indexed{
-    max-width: $width-side-menu;
   }
   .c-nav-side__li-indexed{
     min-width: 100%;
@@ -113,5 +105,20 @@ $width-side-menu: 20rem;
   }
   .c-nav-side__li-indexed-by{
     padding: 0.5rem;
+  }
+}
+@include mq($from: tab, $until: com-s) {  //COMPUTER small
+    .c-nav-side{
+      max-width: 30%;
+    }
+}
+@include mq($from: com-s, $until: com-bb) {  //COMPUTER small
+    .c-nav-side{
+      max-width: 20%;
+    }
+}
+@include mq($from: com-bb) {  //COMPUTER small
+  .c-nav-side{
+    max-width: 20rem;
   }
 }

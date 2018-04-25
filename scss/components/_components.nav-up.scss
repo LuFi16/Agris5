@@ -1,6 +1,6 @@
 
 .c-nav-up__nav{
-  background: $color-header;
+  background: $color-up-menu;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -43,7 +43,7 @@
   background: $color-agris-green;
   border: 0.5px solid $color-agris-green;
   padding: 0.4rem 1rem 0.4rem 1rem;
-  color: $color-login-font;
+  color: $color-text-invert;
   font-size: 0.8rem;
   width: 6rem;
 }
@@ -63,8 +63,8 @@
   background: transparentize($color-agris-green, 0.9);
 }
 .c-btn__search{
-  background: $color-footer;
-  border: 0.5px solid $color-nav-side-line;
+  background: $color-search;
+  border: 0.5px solid $color-search-border;
   padding: 0.4rem 0.5rem 0.4rem 0.5rem;
   margin-left: -0.3rem;   // for button next to the search without a space
   font-size: 0.8rem;
@@ -73,7 +73,7 @@
   background: transparentize(black, 0.8);
 }
 .c-field__search{
-  border: 0.5px solid $color-nav-side-line;
+  border: 0.5px solid $color-search-border;
   padding: 0.4rem 0.5rem 0.4rem 0.5rem;
   margin: 0;
   font-size: 0.8rem;

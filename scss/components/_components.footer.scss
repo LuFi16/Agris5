@@ -17,3 +17,9 @@
   text-align: left;
   padding-left: 0.5rem;
 }
+.c-address__line{
+  border-left: 1px solid $color-address-line;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

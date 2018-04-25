@@ -5,7 +5,7 @@
 
 .c-text{
   padding: 5rem;
-  background: $color-article;
+  background: $color-article-bg;
   border-left: 1px solid $color-article-border;
   border-right: 1px solid $color-article-border;
   margin: 0 auto 0 auto;
@@ -73,7 +73,7 @@
 }
 @include mq($from: tab, $until: com-s) {  //COMPUTER small
   .c-text{
-    max-width: 40rem;
+    width: 70%;
   }
   .c-text__contacts-people{
     flex-direction: column;
@@ -85,6 +85,6 @@
 }
 @include mq($from: com-s, $until: com-bb) {  //COMPUTER medium
   .c-text{
-    max-width: 60rem;
+    width: 80%;
   }
 }

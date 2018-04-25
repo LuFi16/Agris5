@@ -14,10 +14,10 @@ $inuit-global-spacing-unit-factor-huge: 3.5;
 @import "../bower_components/inuitcss/tools/tools.clearfix";
 @import "../bower_components/inuitcss/tools/tools.hidden";
 $mq-breakpoints: (
-        mobile: $mobile,
-        tablet: $tablet,
-        desktop: $desktop,
-        wide: $wide,
+        mobile: $mobile,      //mobile:  320px
+        tablet: $tablet,      //tablet:  740px
+        desktop: $desktop,    //desktop: 980px
+        wide: $wide,          //wide:    1300px
         mob: 600px,
         tab: 1024px,
 
@@ -29,18 +29,6 @@ $mq-breakpoints: (
         tab-m-nav: 755px,
         tab-b-nav: 928px,
         com-s-nav: 1220px);
-/*
-MOBILE - max-width: 599px
-TABLET - min-width: 600px and max-width: 1023px
-COMPUTER - min-width: 1024px
-COMPUTER SMALL - min-width: 1024px and max-width: 1280px
-COMPUTER BIGGER - min-width: 1325px
-
-mobile:  320px
-tablet:  740px
-desktop: 980px
-wide:    1300px
-*/
 @import "../bower_components/sass-mq/mq";
 
 // GENERIC
@@ -86,6 +74,8 @@ wide:    1300px
 // FONTS
 //$lato-path: "../bower_components/lato-fontface/fonts"; // should be included only used ones in implementation
 //@import "../bower_components/lato-fontface/scss/lato"; // should be included only used ones in implementation
+
+@import "../bower_components/components-font-awesome/css/font-awesome.min.css";
 
 
 // COMPONENTS

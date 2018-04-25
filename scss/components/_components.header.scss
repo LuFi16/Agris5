@@ -5,28 +5,26 @@
 .c-main__header{
   background: url("../img/pozadi.jpg") $color-introduction-back;
   padding-top: 2rem;
+  border-top: 1px solid $color-agris-green;
 }
 .c-main__introduction{
   text-align: center;
-  color: $color-introduction;
-  border-bottom: 1px solid $color-article-border;
+  color: $color-text-invert;
   padding: 0 2rem 0 2rem;
 }
-.c-first-heading{}
 .c-main__issn{
-  border: 1px solid $color-introduction;
   padding: 0.5rem;
   margin: auto auto 2rem auto;     //align to center and bottom indentation
   width: 10rem;
   }
-  .c-main__text{}
-  .c-main__more-info{
-    background: $color-introduction;
+.c-main__more-info{
+    background: $color-more_information;
     color: $color-text;
     padding: 1rem;
     margin: auto;  //align to center
+    border-bottom: 1px solid $color-article-border;
   }
-  .c-main__about{
+.c-main__about{
     text-decoration: none;
     color: $color-agris-green;
     border: 1px solid $color-agris-green;

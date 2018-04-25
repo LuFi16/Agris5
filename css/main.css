@@ -1,16 +1,4 @@
 @charset "UTF-8";
-/*
-MOBILE - max-width: 599px
-TABLET - min-width: 600px and max-width: 1023px
-COMPUTER - min-width: 1024px
-COMPUTER SMALL - min-width: 1024px and max-width: 1280px
-COMPUTER BIGGER - min-width: 1325px
-
-mobile:  320px
-tablet:  740px
-desktop: 980px
-wide:    1300px
-*/
 /* ==========================================================================
    #BOX-SIZING
    ========================================================================== */
@@ -18,6 +6,7 @@ wide:    1300px
  * More sensible default box-sizing:
  * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
  */
+@import url(../bower_components/components-font-awesome/css/font-awesome.min.css);
 html {
   box-sizing: border-box; }
 
@@ -2852,6 +2841,9 @@ table {
 .u-hidden {
   display: none !important; }
 
+/*HEADER colors*/
+/*MENU UP and SIDE colors*/
+/*ARTICLE colors*/
 .c-nonmargin {
   margin: 0; }
 
@@ -2966,21 +2958,12 @@ table {
   color: white; }
 
 @media (max-width: 37.49em) {
-  /* .c-body{
-   background: coral;  //for testing
-   }*/
   .c-article__abstract {
     border-bottom: 1px solid #e0e0e0; } }
 @media (min-width: 37.5em) and (max-width: 63.99em) {
-  /*.c-body{
-    background: olive;  //for testing
-  }*/
   .c-article__abstract {
     border-bottom: 1px solid #e0e0e0; } }
 @media (min-width: 64em) {
-  /*.c-body{
-  background: lightseagreen;  //for testing
-  }*/
   .c-article {
     max-width: 80rem;
     min-width: 10rem; }
@@ -2997,15 +2980,9 @@ table {
   .c-article__keywords {
     padding: 1rem; } }
 @media (min-width: 64em) and (max-width: 79.99em) {
-  /*.c-body{
-    background: cornflowerblue;  //for testing
-  }*/
   .c-articles {
     max-width: 40rem; } }
 @media (min-width: 82.8125em) {
-  /*.c-body{
-    background: cadetblue;  //for testing
-  }*/
   .c-article {
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -3039,7 +3016,7 @@ table {
   padding: 1rem 0 0 1rem;
   align-items: center;
   justify-content: space-around;
-  border-top: 1px solid grey; }
+  border-top: 1px solid #d9d9d9; }
 
 .c-footer__p {
   margin: 1rem; }
@@ -3051,6 +3028,12 @@ table {
 .c-footer__address {
   text-align: left;
   padding-left: 0.5rem; }
+
+.c-address__line {
+  border-left: 1px solid #bfbfbf;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .c-form {
   display: flex;
@@ -3074,6 +3057,12 @@ table {
   justify-content: space-between; }
   .c-form__li label {
     padding: 0.4rem 0 0.4rem 0; }
+
+/*[data-required]::after {
+  content: ' *';            //optional
+}*/
+[data-nonrequired] {
+  color: grey; }
 
 .c-form__li-btn {
   justify-content: flex-end; }
@@ -3126,16 +3115,15 @@ table {
 
 .c-main__header {
   background: url("../img/pozadi.jpg") grey;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  border-top: 1px solid #038000; }
 
 .c-main__introduction {
   text-align: center;
   color: white;
-  border-bottom: 1px solid #e0e0e0;
   padding: 0 2rem 0 2rem; }
 
 .c-main__issn {
-  border: 1px solid white;
   padding: 0.5rem;
   margin: auto auto 2rem auto;
   width: 10rem; }
@@ -3144,7 +3132,8 @@ table {
   background: white;
   color: black;
   padding: 1rem;
-  margin: auto; }
+  margin: auto;
+  border-bottom: 1px solid #e0e0e0; }
 
 .c-main__about {
   text-decoration: none;
@@ -3173,7 +3162,7 @@ table {
 .c-nav-side {
   background: white;
   padding: 0;
-  border-right: 1px solid grey; }
+  border-right: 1px solid #d9d9d9; }
 
 .c-nav-side__ul-menu {
   padding: 0;
@@ -3197,16 +3186,15 @@ table {
 .c-nav-side__li:hover {
   background: rgba(3, 128, 0, 0.1); }
 
+.c-nav-side__li:active {
+  background: rgba(3, 128, 0, 0.2); }
+
 .c-nav-side__heading {
   background: #ededed;
   border-top: solid 1px #038000;
   border-bottom: solid 1px #038000;
-  border-right: 1px solid grey;
   padding: 1rem 0 1rem 0;
   margin: 0; }
-
-.c-nav-side__heading:hover {
-  background: rgba(3, 128, 0, 0.2); }
 
 .c-nav-side__heading-content {
   border-top: none; }
@@ -3260,17 +3248,8 @@ table {
   .c-nav-side__li-indexed-by {
     padding: 0.5rem; } }
 @media (min-width: 64em) {
-  .c-nav-side {
-    max-width: 20rem; }
-
   .c-nav-side__li {
     text-align: left; }
-
-  .c-nav-side__heading {
-    width: 20rem; }
-
-  .c-nav-side__ul-indexed {
-    max-width: 20rem; }
 
   .c-nav-side__li-indexed {
     min-width: 100%;
@@ -3278,6 +3257,15 @@ table {
 
   .c-nav-side__li-indexed-by {
     padding: 0.5rem; } }
+@media (min-width: 64em) and (max-width: 79.99em) {
+  .c-nav-side {
+    max-width: 30%; } }
+@media (min-width: 80em) and (max-width: 99.99em) {
+  .c-nav-side {
+    max-width: 20%; } }
+@media (min-width: 100em) {
+  .c-nav-side {
+    max-width: 20rem; } }
 .c-nav-up__nav {
   background: white;
   width: 100%;
@@ -3484,8 +3472,7 @@ table {
   padding-bottom: 1rem; }
 
 .c-table__archive {
-  width: auto;
-  min-width: 15rem;
+  width: 20rem;
   border: 1px solid #e0e0e0; }
 
 .c-table__archive-cell {
@@ -3571,7 +3558,7 @@ table {
     min-width: 10rem; } }
 @media (min-width: 64em) and (max-width: 79.99em) {
   .c-text {
-    max-width: 40rem; }
+    width: 70%; }
 
   .c-text__contacts-people {
     flex-direction: column;
@@ -3581,6 +3568,6 @@ table {
     margin: 0 0.5rem 2rem 0.5rem; } }
 @media (min-width: 80em) and (max-width: 99.99em) {
   .c-text {
-    max-width: 60rem; } }
+    width: 80%; } }
 
 /*# sourceMappingURL=main.css.map */
