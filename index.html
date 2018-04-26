@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agris-online</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 
@@ -34,7 +36,7 @@
                     CONTACTS AND LINKS
                 </a>
             </li>
-            <li class="c-nav-up-li-login mobile-hide">  <!-- searching -->
+            <li class="c-nav-up-li-login mobile-hide">
                 <a href="#" class="c-btn__a"><button class="c-btn__login" type="submit">LOGIN</button> </a>
                 <a href="#" class="c-btn__a"><button class="c-btn__register" type="submit">REGISTER</button> </a>
             </li>
@@ -43,16 +45,16 @@
                 <button class="c-btn__search" type="submit">Search</button>
             </li>
 
-
-
-
-
-
+           <!-- DROPDOWN MENU -->
             <li class="c-nav-up__li-menu">
-               <label><i class="fa fa-bars c-nav-up__img-menu"></i></label>
-                <input type="checkbox" title="menu" class="c-dropdown__input">
+               <label for="dropdown_checkbox"><i class="fa fa-bars c-nav-up__img-menu"></i></label>
+                <input type="checkbox" title="menu" class="c-dropdown__input" id="dropdown_checkbox">
                 <div class="c-dropdown">
                     <ul class="c-dropdown__ul">
+                        <li class="c-dropdown__li">  <!-- searching -->
+                            <input class="c-field__search" type="text" placeholder="Search papers...">
+                            <button class="c-btn__search" type="submit">Search</button>
+                        </li>
                         <li class="c-dropdown__li">
                             <a href="index.html" class="c-dropdown__a">
                                 ABOUT THE JOURNAL
@@ -68,15 +70,52 @@
                                 CONTACTS AND LINKS
                             </a>
                         </li>
+                        <li class="c-dropdown__li">  <!-- searching -->
+                            <a href="#" class="c-btn__a"><button class="c-btn__login" type="submit">LOGIN</button> </a>
+                            <a href="#" class="c-btn__a"><button class="c-btn__register" type="submit">REGISTER</button> </a>
+                        </li>
+                        <li class="c-bold c-dropdown__li-heading">
+                                Content
+                        </li>
+                        <li class="c-dropdown__li">
+                            <a class="c-dropdown__a" href="#">
+                                Current Issue
+                            </a>
+                        </li>
+                        <li class="c-dropdown__li">
+                            <a class="c-dropdown__a" href="#">
+                                Archive
+                            </a>
+                        </li>
+                        <li class="c-bold c-dropdown__li-heading">
+                                For Authors
+                        </li>
+                        <li class="c-dropdown__li">
+                            <a class="c-dropdown__a" href="#">
+                                Call for Papers
+                            </a>
+                        </li>
+                        <li class="c-dropdown__li">
+                            <a class="c-dropdown__a" href="#">
+                                Instructions for Authors
+                            </a>
+                        </li>
+                        <li class="c-dropdown__li">
+                            <a class="c-dropdown__a" href="#">
+                                Paper template
+                            </a>
+                        </li>
+                        <li class="c-bold c-dropdown__li-heading">
+                                For Reviewers
+                        </li>
+                        <li class="c-dropdown__li">
+                            <a class="c-dropdown__a" href="#">
+                                Instructions for Reviewers
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </li>
-
-
-
-
-
-
         </ul>
     </nav>
 </header>
@@ -116,7 +155,10 @@
 
     <div class="row">
         <nav class="c-nav-side col-xs-12">
-            <ul class="c-nav-side__ul-menu">
+           <!-- <ul class="c-nav-side__ul-menu mobile-hide comp-hide">
+                <li class="c-nav-side__li">menu</li>
+            </ul>-->
+            <ul class="c-nav-side__ul-menu mobile-hide">
                 <li class="c-nav-side__li-title">
                         <h3 class="c-nav-side__heading c-nav-side__heading-content">
                             Content
@@ -163,7 +205,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="c-nav-side__ul-indexed col-xs-12 col-sm-12">
+            <ul class="c-nav-side__ul-indexed col-xs-12 col-sm-12 tablet-hide">
                 <li class="c-nav-side__li-indexed c-nav-side__li-indexed-by col-sm-3 center-sm">
                     <a class="c-nav-side__a c-nav-side__a-indexed" href="#">
                         INDEXED BY
@@ -180,7 +222,7 @@
                     </a>
                 </li>
                 <li class="c-nav-side__li-indexed col-sm-3 center-sm">
-                    <a class="c-nav-side__a c-nav-side__a-indexed c-nav-side__a-more" href="#">
+                    <a class="c-nav-side__a-more" href="#">
                         MORE
                     </a>
                 </li>
@@ -363,6 +405,16 @@
 </main>
 
 <footer class="c-footer row">
+    <p class="c-footer__p comp-hide">
+        <a href="#">
+            <img class="c-footer__img" src="img/scopus.png" alt="scopus" title="scopus"/>
+        </a>
+    </p>
+    <p class="c-footer__p comp-hide">
+        <a href="#">
+            <img class="c-footer__img" src="img/doi.png" title="doi" alt="doi"/>
+        </a>
+    </p>
     <p class="c-footer__p">
         <a href="#">
             <img class="c-footer__img" src="img/pef.png" alt="pef" title="PEF"/>
@@ -379,13 +431,14 @@
         </a>
     </p>
     <address class="row c-footer__p c-address__line">
-        <a href="#">
+        <a href="#" class="row c-address__a">
             <img class="c-footer__img" src="img/misto.png" alt="point"/>
-        </a>
+
         <div class="c-footer__address">
             PRAGUE KAMÝCKÁ 129<br/>
             165 21 PRAHA 6 SUCHDOL
         </div>
+        </a>
     </address>
 </footer>
 

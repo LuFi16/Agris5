@@ -23,13 +23,9 @@
     padding: 0.4rem 0 0.4rem 0;
   }
 }
-/*[data-required]::after {
-  content: ' *';            //optional
-}*/
-[data-nonrequired] {
-  color: $color-non_required;
+[data-required]::after {
+  content: ' *';
 }
-
 .c-form__li-btn{
   justify-content: flex-end;
 }
@@ -37,19 +33,20 @@
   width: 270px;
   padding: 0.4rem;
   font-family: Calibri, sans-serif;
-  background: transparentize($color-agris-green, 0.9);
-  border: none;
+  //background: transparentize($color-agris-green, 0.9);
+  //border: none;
 }
-
+/*::placeholder {
+  color: $color-text;
+}*/
 .c-form__btn{
   width: 270px;
   padding: 0.4rem;
   font-family: Calibri, sans-serif;
-  background: transparentize($color-agris-green, 0.4);
+  background: $color-agris-green;
   border: none;
-  color: darken($color-agris-green, 5);
+  color: $color-text-invert;
   text-transform: uppercase;
-  font-weight: bold;
   letter-spacing: 1px;
 }
 .c-form__textarea{
@@ -61,8 +58,6 @@
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 }
-
-
 .c-form__a{
   color: $color-agris-green;
 }

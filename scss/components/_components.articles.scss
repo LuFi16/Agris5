@@ -113,6 +113,8 @@ $width-min-article: 10rem;
 .c-article__pdf-a{
   text-decoration: none;
   color: $color-text-invert;
+  display: inline-block;
+  width: 100%;
 }
 
 @include mq($until: mob) {  //MOBILE

@@ -13,7 +13,7 @@
   max-height: 45px;
   width: auto;
 }
-.c-nav-up-li{
+.c-nav-up-li{   /**//**//**//**//**//**/
   list-style-type: none;
   margin: auto;
 }
@@ -35,9 +35,11 @@
 .c-nav-up__li-menu{
   list-style-type: none;
 }
-.c-nav-up-a{
+.c-nav-up-a{   /**//**//**//**//**//**/
   text-decoration: none;
   color: $color-text;
+  margin: 0;
+  padding: 1.5rem;
 }
 .c-btn__login{
   background: $color-agris-green;
@@ -46,6 +48,7 @@
   color: $color-text-invert;
   font-size: 0.8rem;
   width: 6rem;
+  cursor: pointer;
 }
 .c-btn__login:hover{
   background: darken($color-agris-green, 5);
@@ -58,6 +61,7 @@
   color: $color-agris-green;
   font-size: 0.8rem;
   width: 6rem;
+  cursor: pointer;
 }
 .c-btn__register:hover{
   background: transparentize($color-agris-green, 0.9);
@@ -68,6 +72,7 @@
   padding: 0.4rem 0.5rem 0.4rem 0.5rem;
   margin-left: -0.3rem;   // for button next to the search without a space
   font-size: 0.8rem;
+  cursor: pointer;
 }
 .c-btn__search:hover{
   background: transparentize(black, 0.8);
@@ -81,20 +86,21 @@
 .c-btn__a{
   text-decoration: none;
 }
+.c-dropdown__input[type=checkbox]{
+  position: absolute;     //hide checkbox
+  top: -9999px;
+  left: -9999px;
+}
 
 @include mq($until: mob) {  //MOBILE
   .c-nav-up{
-    //margin: auto;
     margin: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
-
-
-
-
+/*   DROPDOWN MENU   */
   .c-nav-up__img-menu{
     color: black;
     font-size: 45px;
@@ -103,7 +109,10 @@
     width: 100%;
     text-align: center;
     list-style-type: none;
-    background: transparentize($color-agris-green, 0.99);
+    position: absolute;
+    left: 0;
+    top: 4.9rem;
+    background: $color-dropdown-bg;
   }
   .c-dropdown__ul{
     margin: 0;
@@ -111,34 +120,31 @@
   .c-dropdown__li{
     list-style-type: none;
     padding: 1rem;
+    text-transform: uppercase;
   }
   .c-dropdown__a{
     text-decoration: none;
     color: $color-text;
   }
+  .c-dropdown__li-heading{
+    list-style-type: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    background: $color-dropdown-divider;
+  }
+  /*.c-dropdown__li-heading:hover{
+    background: inherit;
+  }*/
   .c-dropdown__li:hover{
     background: transparentize($color-agris-green, 0.9);
   }
-
-  .c-dropdown__input[type=checkbox] {
-    position: absolute;
-  }
-  .c-dropdown__input[type=checkbox]:not(:checked) ~ .c-dropdown {
+  .c-dropdown__input[type=checkbox]:not(:checked) ~ .c-dropdown {   //hide dropdown menu
     display: none;
   }
   .c-nav-up__img-menu{
-    -webkit-appearance: push-button;
-    -moz-appearance: button;
-    display: inline-block;
     cursor: pointer;
   }
-
-
-
-
-
-
-
+/*   DROPDOWN MENU   */
 
   .c-nav-up__li-logo{
     padding: 1rem 0 1rem 0;
@@ -151,8 +157,11 @@
   .mobile-hide{
     display: none;
   }
+  .tablet-hide{
+    display: none;
+  }
 }
-@include mq($from: mob, $until: tab) {  //TABLET
+  @include mq($from: mob, $until: tab) {  //TABLET
   .c-nav-up{
     margin: auto;  //horizontal alignment to center for whole up menu
   }
@@ -178,6 +187,9 @@
     padding: 1.5rem 1rem 1.5rem 1rem;
     order: 4;
   }
+    .tablet-hide{
+      display: none;
+    }
 }
 @include mq($from: mob, $until: tab-s-nav) {  //TABLET smaller
   .c-nav-up-li{
@@ -188,12 +200,14 @@
     order: 4;
   }
 }
-@include mq($from: tab-s-nav, $until: tab-m-nav) {  //TABLET medium
+@include mq($from: tab-s-nav, $until: tab-mm-nav) {  //TABLET medium
   .c-nav-up-li{
     padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    order: 3;
   }
   .c-nav-up-li-search{
     padding: 1rem 0.5rem 1rem 0.5rem;
+    order: 4;
   }
   .c-nav-up-li-login{
     padding: 1rem 0.5rem 1rem 0.5rem;
@@ -229,6 +243,9 @@
   }
   .c-nav-up-li-logo{
     padding: 0 1rem 0 1rem;
+  }
+  .comp-hide{
+    display: none;
   }
 }
 @include mq($from: tab, $until: com-s-nav) {  //COMPUTER smaller

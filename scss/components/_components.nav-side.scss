@@ -11,7 +11,7 @@
 
 .c-nav-side__li{
   list-style-type: none;
-  padding: 0.5rem 2rem 0.5rem 2rem;
+  //padding: 0.5rem 2rem 0.5rem 2rem;
 }
 .c-nav-side__li-title{
   list-style-type: none;
@@ -20,6 +20,9 @@
 .c-nav-side__a{
   text-decoration: none;
   color: $color-text;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
 .c-nav-side__a-main{
@@ -48,7 +51,6 @@
 }
 .c-nav-side__li-indexed{
   list-style-type: none;
-  padding: 0;
   margin: 0 2rem 2rem 2rem;
   text-align: center;
 }
@@ -62,6 +64,7 @@
   color: $color-agris-green;
   border: 1px solid $color-agris-green;
   padding: 0.5rem 1rem 0.5rem 1rem;
+  text-decoration: none;
 }
 .c-nav-side__a-more:hover{
   background: transparentize($color-agris-green, 0.9);
