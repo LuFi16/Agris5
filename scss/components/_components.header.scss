@@ -13,16 +13,20 @@
   padding: 0 2rem 0 2rem;
 }
 .c-main__issn{
-  padding: 0.5rem;
+  padding: 0.2rem;
   margin: auto auto 2rem auto;     //align to center and bottom indentation
   width: 10rem;
+  border: 1px solid $color-issn;
+  border-radius: 5px;
+  font-size: 1.2rem;
   }
 .c-main__more-info{
     background: $color-more_information;
-    color: $color-text;
+    color: $color-agris-green;
     padding: 1rem;
     margin: auto;  //align to center
     border-bottom: 1px solid $color-article-border;
+  font-size: 1.1rem;
   }
 .c-main__about{
     text-decoration: none;
@@ -35,11 +39,11 @@
 .c-main__about:hover{
   background: transparentize($color-agris-green, 0.9);
 }
+.c-main__text{
+  font-size: 1.1rem;
+}
 
 @include mq($until: mob) {  //MOBILE
-  .c-main__text{
-    display: none;
-  }
   .c-main__more-info{
     width: 90%;
     line-height: 2;

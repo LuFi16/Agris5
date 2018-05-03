@@ -2885,11 +2885,11 @@ table {
 .c-article__heading-tittle {
   color: #038000;
   text-decoration: none;
-  font-size: 1.6rem; }
+  font-size: 1.3rem; }
 
 .c-article__heading {
-  font-size: 1.2rem;
-  margin: 0; }
+  font-size: 1rem;
+  margin: 0 0 0.8rem 0; }
 
 .c-first__a {
   display: inline-flex;
@@ -2951,7 +2951,8 @@ table {
 .c-article__pdf-p {
   padding: 0.5rem;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 0.9rem; }
 
 .c-article__pdf-a {
   text-decoration: none;
@@ -3025,7 +3026,14 @@ table {
 
 .c-footer__img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  max-height: 4rem; }
+
+.c-footer__img-point {
+  max-width: 100%;
+  height: auto;
+  max-height: 2rem;
+  align-self: center; }
 
 .c-footer__address {
   text-align: left;
@@ -3127,16 +3135,20 @@ table {
   padding: 0 2rem 0 2rem; }
 
 .c-main__issn {
-  padding: 0.5rem;
+  padding: 0.2rem;
   margin: auto auto 2rem auto;
-  width: 10rem; }
+  width: 10rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1.2rem; }
 
 .c-main__more-info {
   background: white;
-  color: black;
+  color: #038000;
   padding: 1rem;
   margin: auto;
-  border-bottom: 1px solid #e0e0e0; }
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.1rem; }
 
 .c-main__about {
   text-decoration: none;
@@ -3149,10 +3161,10 @@ table {
 .c-main__about:hover {
   background: rgba(3, 128, 0, 0.1); }
 
-@media (max-width: 37.49em) {
-  .c-main__text {
-    display: none; }
+.c-main__text {
+  font-size: 1.1rem; }
 
+@media (max-width: 37.49em) {
   .c-main__more-info {
     width: 90%;
     line-height: 2; } }
@@ -3172,7 +3184,8 @@ table {
   margin: 0; }
 
 .c-nav-side__li {
-  list-style-type: none; }
+  list-style-type: none;
+  font-size: 1.1rem; }
 
 .c-nav-side__li-title {
   list-style-type: none;
@@ -3211,26 +3224,26 @@ table {
 
 .c-nav-side__li-indexed {
   list-style-type: none;
-  margin: 0 2rem 2rem 2rem;
   text-align: center; }
 
 .c-nav-side__li-indexed-by:hover {
   background: rgba(3, 128, 0, 0.1); }
 
 .c-nav-side__a-indexed {
-  color: #038000; }
+  color: #038000;
+  font-size: 1.3rem; }
 
 .c-nav-side__a-more {
   color: #038000;
   border: 1px solid #038000;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
   text-decoration: none; }
 
 .c-nav-side__a-more:hover {
   background: rgba(3, 128, 0, 0.1); }
 
 .c-nav-side__img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto; }
 
 @media (max-width: 37.49em) {
@@ -3238,7 +3251,7 @@ table {
     text-align: center; }
 
   .c-nav-side__li-indexed {
-    margin: auto auto 1.5rem auto; }
+    margin: auto auto 1rem auto; }
 
   .c-nav-side__li-indexed-by {
     padding: 0.5rem; } }
@@ -3247,7 +3260,7 @@ table {
     text-align: center; }
 
   .c-nav-side__li-indexed {
-    margin: auto auto 1.5rem auto;
+    margin: auto auto 1rem auto;
     min-width: 100%; }
 
   .c-nav-side__li-indexed-by {
@@ -3258,10 +3271,7 @@ table {
 
   .c-nav-side__li-indexed {
     min-width: 100%;
-    margin: auto auto 1.5rem auto; }
-
-  .c-nav-side__li-indexed-by {
-    padding: 0.5rem; } }
+    margin: auto auto 1rem auto; } }
 @media (min-width: 64em) and (max-width: 79.99em) {
   .c-nav-side {
     max-width: 30%; } }
@@ -3286,12 +3296,6 @@ table {
   width: auto; }
 
 .c-nav-up-li {
-  /**/
-  /**/
-  /**/
-  /**/
-  /**/
-  /**/
   list-style-type: none;
   margin: auto; }
 
@@ -3314,12 +3318,6 @@ table {
   list-style-type: none; }
 
 .c-nav-up-a {
-  /**/
-  /**/
-  /**/
-  /**/
-  /**/
-  /**/
   text-decoration: none;
   color: black;
   margin: 0;
@@ -3414,9 +3412,6 @@ table {
     text-transform: uppercase;
     background: #f2f2f2; }
 
-  /*.c-dropdown__li-heading:hover{
-    background: inherit;
-  }*/
   .c-dropdown__li:hover {
     background: rgba(3, 128, 0, 0.1); }
 
@@ -3439,7 +3434,44 @@ table {
     display: none; }
 
   .tablet-hide {
-    display: none; } }
+    display: none; }
+
+  .c-btn__register {
+    width: 50%;
+    height: 2.8rem;
+    border: none;
+    background: rgba(3, 128, 0, 0.03); }
+
+  .c-btn__login {
+    width: 50%;
+    height: 2.8rem;
+    border: none; }
+
+  .c-dropdown__li-logreg {
+    padding: 0;
+    display: inline-block;
+    width: 100%; }
+
+  .c-dropdown__a {
+    display: inline-block;
+    width: 100%; }
+
+  .c-dropdown__li-search {
+    padding: 1rem; }
+
+  .c-field__search {
+    width: 70%;
+    height: 2.5rem; }
+
+  .c-btn__search {
+    width: 30%;
+    height: 2.5rem; }
+
+  .c-dropdown__li-logreg:hover {
+    background: none; }
+
+  .c-dropdown__li-search:hover {
+    background: none; } }
 @media (min-width: 37.5em) and (max-width: 63.99em) {
   .c-nav-up {
     margin: auto; }

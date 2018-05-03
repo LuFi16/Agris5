@@ -51,7 +51,7 @@
                 <input type="checkbox" title="menu" class="c-dropdown__input" id="dropdown_checkbox">
                 <div class="c-dropdown">
                     <ul class="c-dropdown__ul">
-                        <li class="c-dropdown__li">  <!-- searching -->
+                        <li class="c-dropdown__li c-dropdown__li-search">  <!-- searching -->
                             <input class="c-field__search" type="text" placeholder="Search papers...">
                             <button class="c-btn__search" type="submit">Search</button>
                         </li>
@@ -69,10 +69,6 @@
                             <a href="#" class="c-dropdown__a">
                                 CONTACTS AND LINKS
                             </a>
-                        </li>
-                        <li class="c-dropdown__li">  <!-- searching -->
-                            <a href="#" class="c-btn__a"><button class="c-btn__login" type="submit">LOGIN</button> </a>
-                            <a href="#" class="c-btn__a"><button class="c-btn__register" type="submit">REGISTER</button> </a>
                         </li>
                         <li class="c-bold c-dropdown__li-heading">
                                 Content
@@ -113,6 +109,10 @@
                                 Instructions for Reviewers
                             </a>
                         </li>
+                        <li class="c-dropdown__li c-dropdown__li-logreg">  <!-- searching -->
+                            <a href="#" class="c-btn__a"><button class="c-btn__login" type="submit">LOGIN</button> </a>
+                            <a href="#" class="c-btn__a"><button class="c-btn__register" type="submit">REGISTER</button> </a>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -130,7 +130,7 @@
                 ISSN&nbsp;1804&ndash;1930
                 <!-- &nbsp; = not breaking space -->
             </p>
-            <div class="c-main__text">
+            <div class="c-main__text mobile-hide tablet-hide">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas malesuada gravida. Pellentesque
                     pellentesque ipsum ac ante mollis, ut imperdiet dolor tempor. Praesent non feugiat justo. In ornare
@@ -262,7 +262,7 @@
                     </h2>
                 </div>
 
-                <div class="c-article__authors">
+                <div class="c-article__authors c-bold">
                     <p class="c-nonmargin">
                         U. B. Angadi, S. Anandan, N. K. Gowda, D. Rajendran, L. Devi, A. V. Elangovan, S. Jash
                     </p>
@@ -316,7 +316,7 @@
                     </h2>
                 </div>
 
-                <div class="c-article__authors">
+                <div class="c-article__authors c-bold">
                     <p class="c-nonmargin">
                         Vít Malinovský
                     </p>
@@ -362,7 +362,7 @@
                     </h2>
                 </div>
 
-                <div class="c-article__authors">
+                <div class="c-article__authors c-bold">
                     <p class="c-nonmargin">
                         Hong - Ron Nguyen, Quang - Thanh Ngo, Ngoc - Danh Nguyen
                     </p>
@@ -432,7 +432,7 @@
     </p>
     <address class="row c-footer__p c-address__line">
         <a href="#" class="row c-address__a">
-            <img class="c-footer__img" src="img/misto.png" alt="point"/>
+            <img class="c-footer__img-point" src="img/misto.png" alt="point"/>
 
         <div class="c-footer__address">
             PRAGUE KAMÝCKÁ 129<br/>

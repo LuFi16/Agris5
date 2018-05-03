@@ -11,7 +11,7 @@
 
 .c-nav-side__li{
   list-style-type: none;
-  //padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1.1rem;
 }
 .c-nav-side__li-title{
   list-style-type: none;
@@ -51,7 +51,6 @@
 }
 .c-nav-side__li-indexed{
   list-style-type: none;
-  margin: 0 2rem 2rem 2rem;
   text-align: center;
 }
 .c-nav-side__li-indexed-by:hover{
@@ -59,18 +58,19 @@
 }
 .c-nav-side__a-indexed{
   color: $color-agris-green;
+  font-size: 1.3rem;
 }
 .c-nav-side__a-more{
   color: $color-agris-green;
   border: 1px solid $color-agris-green;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
   text-decoration: none;
 }
 .c-nav-side__a-more:hover{
   background: transparentize($color-agris-green, 0.9);
 }
 .c-nav-side__img{
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -79,7 +79,7 @@
     text-align: center;
   }
   .c-nav-side__li-indexed{
-    margin: auto auto 1.5rem auto;
+    margin: auto auto 1rem auto;
   }
   .c-nav-side__li-indexed-by{
     padding: 0.5rem;
@@ -90,7 +90,7 @@
     text-align: center;
   }
   .c-nav-side__li-indexed{
-    margin: auto auto 1.5rem auto;
+    margin: auto auto 1rem auto;
     min-width: 100%;
   }
   .c-nav-side__li-indexed-by{
@@ -104,10 +104,7 @@
   }
   .c-nav-side__li-indexed{
     min-width: 100%;
-    margin: auto auto 1.5rem auto;
-  }
-  .c-nav-side__li-indexed-by{
-    padding: 0.5rem;
+    margin: auto auto 1rem auto;
   }
 }
 @include mq($from: tab, $until: com-s) {  //COMPUTER small

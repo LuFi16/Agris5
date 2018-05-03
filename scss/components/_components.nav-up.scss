@@ -13,7 +13,7 @@
   max-height: 45px;
   width: auto;
 }
-.c-nav-up-li{   /**//**//**//**//**//**/
+.c-nav-up-li{
   list-style-type: none;
   margin: auto;
 }
@@ -35,7 +35,7 @@
 .c-nav-up__li-menu{
   list-style-type: none;
 }
-.c-nav-up-a{   /**//**//**//**//**//**/
+.c-nav-up-a{
   text-decoration: none;
   color: $color-text;
   margin: 0;
@@ -132,9 +132,7 @@
     text-transform: uppercase;
     background: $color-dropdown-divider;
   }
-  /*.c-dropdown__li-heading:hover{
-    background: inherit;
-  }*/
+
   .c-dropdown__li:hover{
     background: transparentize($color-agris-green, 0.9);
   }
@@ -159,6 +157,43 @@
   }
   .tablet-hide{
     display: none;
+  }
+  .c-btn__register{
+    width: 50%;
+    height: 2.8rem;
+    border: none;
+    background: transparentize($color-agris-green, 0.97);
+  }
+  .c-btn__login{
+    width: 50%;
+    height: 2.8rem;
+    border: none;
+  }
+  .c-dropdown__li-logreg{
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .c-dropdown__a{
+    display: inline-block;
+    width: 100%;
+  }
+  .c-dropdown__li-search{
+    padding: 1rem;
+  }
+  .c-field__search{
+    width: 70%;
+    height: 2.5rem;
+  }
+  .c-btn__search{
+    width: 30%;
+    height: 2.5rem;
+  }
+  .c-dropdown__li-logreg:hover{
+    background: none;
+  }
+  .c-dropdown__li-search:hover{
+    background: none;
   }
 }
   @include mq($from: mob, $until: tab) {  //TABLET
