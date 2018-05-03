@@ -26,16 +26,10 @@
 .c-text__a{
   color: $color-agris-green;
 }
-.c-text__archive-heading{
-  margin: 0;
-}
 .c-text__contact{
   background: transparentize($color-agris-green, 0.9);
   padding: 1rem;
   margin: 1rem 1rem 2rem 1rem;
-  p{
-    margin: 0;
-  }
   box-shadow: 2px 2px 10px grey;
   width: 20rem;
   text-align: center;

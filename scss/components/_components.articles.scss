@@ -32,7 +32,6 @@ $width-min-article: 10rem;
 }
 .c-first__text{
   padding-left: 2rem;
-  font-weight: bold;
   font-size: 1.2rem;
 }
 .c-article__heading-color{
@@ -62,7 +61,6 @@ $width-min-article: 10rem;
 .c-first__p{
   display: flex;
   padding: 0 0.5rem 0 0;
-  margin: 0;
 }
 .c-first__img-download{
   max-width: 100%;
@@ -73,7 +71,6 @@ $width-min-article: 10rem;
   display: flex;
   border-left: 1px solid $color-download-border;
   padding: 0.5rem;
-  margin: 0;
 }
 .c-first__download:hover{
   background: transparentize($color-agris-green, 0.9);
@@ -107,7 +104,6 @@ $width-min-article: 10rem;
 }
 .c-article__pdf-p{
   padding: 0.5rem;
-  margin: 0;
   text-align: center;
   font-size: 0.9rem;
 }
@@ -134,7 +130,8 @@ $width-min-article: 10rem;
     min-width: $width-min-article;
   }
   .c-article__tittle{
-    padding: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
   }
   .c-article__abstract{
     padding: 1rem;
