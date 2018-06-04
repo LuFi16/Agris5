@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agris-online</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 
@@ -42,18 +42,18 @@
             </li>
             <li class="c-nav-up-li-search mobile-hide">  <!-- searching -->
                 <input class="c-field__search" type="text" placeholder="Search papers...">
-                <button class="c-btn__search" type="submit">Search</button>
+                <button class="c-btn__search" type="submit"><i class="fas fa-search"></i></button>
             </li>
 
            <!-- DROPDOWN MENU -->
             <li class="c-nav-up__li-menu">
-               <label for="dropdown_checkbox"><i class="fa fa-bars c-nav-up__img-menu tablet-hide"></i></label>
+               <label for="dropdown_checkbox"><i class="fas fa-bars c-nav-up__img-menu tablet-hide"></i></label>
                 <input type="checkbox" title="menu" class="c-dropdown__input" id="dropdown_checkbox">
                 <div class="c-dropdown tablet-hide">
                     <ul class="c-dropdown__ul">
                         <li class="c-dropdown__li c-dropdown__li-search">  <!-- searching -->
                             <input class="c-field__search" type="text" placeholder="Search papers...">
-                            <button class="c-btn__search" type="submit">Search</button>
+                            <button class="c-btn__search" type="submit"><i class="fas fa-search"></i></button>
                         </li>
                         <li class="c-dropdown__li">
                             <a href="index.html" class="c-dropdown__a">
@@ -205,7 +205,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="c-nav-side__ul-indexed col-xs-12 col-sm-12 tablet-hide">
+            <ul class="c-nav-side__ul-indexed col-xs-12 col-sm-12 tablet-hide mobile-hide">
                 <li class="c-nav-side__li-indexed c-nav-side__li-indexed-by col-sm-3 center-sm">
                     <a class="c-nav-side__a c-nav-side__a-indexed" href="#">
                         INDEXED BY
@@ -218,7 +218,7 @@
                 </li>
                 <li class="c-nav-side__li-indexed col-sm-3 center-sm">
                     <a href="#" class="c-nav-side__a c-nav-side__a-indexed">
-                        <img class="c-nav-side__img" src="img/doi.png" title="doi" alt="doi"/>
+                        <img class="c-nav-side__img" src="img/doi.svg" title="doi" alt="doi"/>
                     </a>
                 </li>
                 <li class="c-nav-side__li-indexed col-sm-3 center-sm">
@@ -233,7 +233,7 @@
             <div class="c-articles__first row">
                 <div class="c-first__main">
                     <p class="col-sm-4">
-                        <img class="c-first__img-news" src="img/noviny.png" alt="newspaper" />
+                        <img class="c-first__img-news" src="img/papers.svg" alt="newspaper" />
                     </p>
                     <div class="c-first__text c-bold">
                         <p>
@@ -247,7 +247,7 @@
 
                 <a class="c-first__a col-12 middle" href="#">
                     <p class="c-first__p c-nonmargin">
-                        <img class="c-first__img-download" id="glasses" src="img/bryle.png" alt="glasses" />
+                        <img class="c-first__img-download" id="pdf_download" src="img/pdf_download.svg" alt="pdf download" />
                     </p>
                     <p class="c-first__download c-nonmargin">
                         DOWNLOAD&nbsp;PDF
@@ -302,7 +302,8 @@
                 <div class="c-article__pdf">
                     <p class="c-article__pdf-p c-nonmargin">
                         <a class="c-article__pdf-a" href="#">
-                            <img src="img/pdf.png" alt="pdf"/>
+                            <!--<img src="img/pdf.png" alt="pdf"/>-->
+                            <i class="far fa-file-pdf c-article__pdf-icon"></i>
                             FULL ISSUE (.PDF, 8,4 MB)
                         </a>
                     </p>
@@ -346,9 +347,9 @@
                     </p>
                 </div>
                 <div class="c-article__pdf">
-                    <p class="c-article__pdf-p">
+                    <p class="c-article__pdf-p c-nonmargin">
                         <a class="c-article__pdf-a" href="#">
-                            <img src="img/pdf.png" alt="pdf"/>
+                            <i class="far fa-file-pdf c-article__pdf-icon"></i>
                             FULL ISSUE (.PDF, 8,4 MB)
                         </a>
                     </p>
@@ -392,9 +393,9 @@
                     </p>
                 </div>
                 <div class="c-article__pdf">
-                    <p class="c-article__pdf-p">
+                    <p class="c-article__pdf-p c-nonmargin">
                         <a class="c-article__pdf-a" href="#">
-                            <img src="img/pdf.png" alt="pdf"/>
+                            <i class="far fa-file-pdf c-article__pdf-icon"></i>
                             FULL ISSUE (.PDF, 8,4 MB)
                         </a>
                     </p>
@@ -412,17 +413,17 @@
     </p>
     <p class="c-footer__p comp-hide">
         <a href="#">
-            <img class="c-footer__img" src="img/doi.png" title="doi" alt="doi"/>
+            <img class="c-footer__img" src="img/doi.svg" title="doi" alt="doi"/>
         </a>
     </p>
     <p class="c-footer__p">
         <a href="#">
-            <img class="c-footer__img" src="img/pef.png" alt="pef" title="PEF"/>
+            <img class="c-footer__img" src="img/pef.svg" alt="pef" title="PEF"/>
         </a>
     </p>
     <p class="c-footer__p">
         <a href="#">
-            <img class="c-footer__img" src="img/csita.png" alt="csita" title="CSITA"/>
+            <img class="c-footer__img" src="img/csita.svg" alt="csita" title="CSITA"/>
         </a>
     </p>
     <p class="c-footer__p">
@@ -432,8 +433,8 @@
     </p>
     <address class="row c-footer__p c-address__line">
         <a href="#" class="row c-address__a">
-            <img class="c-footer__img-point" src="img/misto.png" alt="point"/>
-
+            <!--<img class="c-footer__img-point" src="img/misto.png" alt="point"/>-->
+            <i class="fas fa-map-marker-alt c-footer__img-point"></i>
         <div class="c-footer__address">
             PRAGUE KAMÝCKÁ 129<br/>
             165 21 PRAHA 6 SUCHDOL

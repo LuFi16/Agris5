@@ -20,12 +20,14 @@
 .c-nav-up-li:hover{
   background: transparentize($color-agris-green, 0.9);
 }
-.c-nav-up-li-search, .c-nav-up-li-login{
+.c-nav-up-li-search,
+.c-nav-up-li-login{
   padding: 0;
   list-style-type: none;
   margin: auto;
 }
-.c-nav-up-li-search:hover, .c-nav-up-li-login:hover{
+.c-nav-up-li-search:hover,
+.c-nav-up-li-login:hover{
   background: none;
 }
 .c-nav-up__li-logo{
@@ -153,9 +155,6 @@
     margin: 0 1.5rem 0 0;
   }
   .mobile-hide{
-    display: none;
-  }
-  .tablet-hide{
     display: none;
   }
   .c-btn__register{

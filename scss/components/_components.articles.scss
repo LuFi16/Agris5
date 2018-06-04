@@ -22,8 +22,9 @@ $width-min-article: 10rem;
   text-align: left;
 }
 .c-first__img-news{
-  max-width: 100%;
-  height: auto;
+  /*max-width: 100%;
+  height: auto;*/
+  width: 7rem;
 }
 .c-first__main{
   margin: auto;    //horizontal alignment to center
@@ -63,9 +64,10 @@ $width-min-article: 10rem;
   padding: 0 0.5rem 0 0;
 }
 .c-first__img-download{
-  max-width: 100%;
-  height: auto;
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  //max-width: 100%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 .c-first__download{
   display: flex;
@@ -112,6 +114,11 @@ $width-min-article: 10rem;
   color: $color-text-invert;
   display: inline-block;
   width: 100%;
+}
+.c-article__pdf-icon{
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-right: 0.5rem;
 }
 
 @include mq($until: mob) {  //MOBILE
