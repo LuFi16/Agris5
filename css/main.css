@@ -3052,6 +3052,9 @@ table {
   text-decoration: none;
   color: black; }
 
+.c-footer__address-prague {
+  font-weight: bold; }
+
 .c-form {
   display: flex;
   flex-direction: column; }

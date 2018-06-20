@@ -17,7 +17,7 @@
     <nav class="c-nav-up__nav col-sm-12 row">
         <ul class="c-nav-up row">
             <li class="c-nav-up__li-logo">
-                <a class="c-nav-up-a" href="#">
+                <a class="c-nav-up-a" href="index.html">
                     <img class="c-nav-up__img-logo" src="img/aol_logo.svg" alt="Agris online" />
                 </a>
             </li>
@@ -212,12 +212,12 @@
                     </a>
                 </li>
                 <li class="c-nav-side__li-indexed col-sm-3 center-sm">
-                    <a href="#" class="c-nav-side__a c-nav-side__a-indexed">
+                    <a href="https://www.scopus.com/" class="c-nav-side__a c-nav-side__a-indexed">
                         <img class="c-nav-side__img" src="img/scopus2.png" alt="scopus" title="scopus"/>
                     </a>
                 </li>
                 <li class="c-nav-side__li-indexed col-sm-3 center-sm">
-                    <a href="#" class="c-nav-side__a c-nav-side__a-indexed">
+                    <a href="https://www.doi.org/" class="c-nav-side__a c-nav-side__a-indexed">
                         <img class="c-nav-side__img" src="img/doi.svg" title="doi" alt="doi"/>
                     </a>
                 </li>
@@ -250,7 +250,7 @@
                         <img class="c-first__img-download" id="pdf_download" src="img/pdf_download.svg" alt="pdf download" />
                     </p>
                     <p class="c-first__download c-nonmargin">
-                        DOWNLOAD&nbsp;PDF
+                        DOWNLOAD&nbsp;PDF (XXX MB)
                     </p>
                 </a>
             </div>
@@ -293,6 +293,24 @@
                     <h3 class="c-article__heading">
                         CITATION
                     </h3>
+
+                <!--    {if $article->details}
+                    &lt;!&ndash; Trigger &ndash;&gt;
+                    <button class="clipboard-btn"
+                            data-clipboard-target="#reference-{$article->id_final_article}"
+                            title="Copy">
+                        <i class="fas fa-clipboard"></i>
+                    </button>
+
+                    &lt;!&ndash; Target &ndash;&gt;
+                    <span id="reference-{$article->id_final_article}">
+                    <p class="c-nonmargin">
+                        {$article->details}
+                        {if $article->doi}DOI:&nbsp;{$article->doi|doi}.{/if}
+                    </p>
+                </span>
+                    {/if}-->
+
                     <p class="c-nonmargin">
                         Asante, S. B., Osei-Asare, Y. B. and Kuwornu, J. K. M. (2016) "Smallholder maize farmers' food
                         consumption expenditures in Ghana: The mediating role of commercialization", AGRIS on-line Papers in
@@ -304,7 +322,7 @@
                         <a class="c-article__pdf-a" href="#">
                             <!--<img src="img/pdf.png" alt="pdf"/>-->
                             <i class="far fa-file-pdf c-article__pdf-icon"></i>
-                            FULL ISSUE (.PDF, 8,4 MB)
+                            FULL ISSUE (.PDF, XXX MB)
                         </a>
                     </p>
                 </div>
@@ -407,36 +425,36 @@
 
 <footer class="c-footer row">
     <p class="c-footer__p comp-hide">
-        <a href="#">
+        <a href="https://www.scopus.com/">
             <img class="c-footer__img" src="img/scopus2.png" alt="scopus" title="scopus"/>
         </a>
     </p>
     <p class="c-footer__p comp-hide">
-        <a href="#">
+        <a href="https://www.doi.org/">
             <img class="c-footer__img" src="img/doi.svg" title="doi" alt="doi"/>
         </a>
     </p>
     <p class="c-footer__p">
-        <a href="#">
+        <a href="https://www.pef.czu.cz/">
             <img class="c-footer__img" src="img/pef.svg" alt="pef" title="PEF"/>
         </a>
     </p>
     <p class="c-footer__p">
-        <a href="#">
+        <a href="https://www.csita.cz/">
             <img class="c-footer__img" src="img/csita.svg" alt="csita" title="CSITA"/>
         </a>
     </p>
     <p class="c-footer__p">
-        <a href="#">
+        <a href="https://ap.pef.czu.cz/">
             <img class="c-footer__img" src="img/ap_obrysy.svg" alt="ap" title="Agrarian Perspectives XXV."/>
         </a>
     </p>
     <address class="row c-footer__p c-address__line">
-        <a href="#" class="row c-address__a">
+        <a href="https://goo.gl/maps/d8RmmC3HEfG2" class="row c-address__a">
             <!--<img class="c-footer__img-point" src="img/misto.png" alt="point"/>-->
             <i class="fas fa-map-marker-alt c-footer__img-point"></i>
         <div class="c-footer__address">
-            PRAGUE KAMÝCKÁ 129<br/>
+            <span class="c-footer__address-prague">PRAGUE</span> KAMÝCKÁ 129<br/>
             165 21 PRAHA 6 SUCHDOL
         </div>
         </a>
