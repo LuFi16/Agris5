@@ -294,35 +294,34 @@
                         CITATION
                     </h3>
 
-                <!--    {if $article->details}
-                    &lt;!&ndash; Trigger &ndash;&gt;
+                    <!--{if $article->details}-->
+
+                    <!-- Target -->
+                    <span id="reference-{$article->id_final_article}">
+                    <p class="c-nonmargin">
+
+                        <!-- Trigger -->
                     <button class="clipboard-btn"
                             data-clipboard-target="#reference-{$article->id_final_article}"
                             title="Copy">
                         <i class="fas fa-clipboard"></i>
                     </button>
-
-                    &lt;!&ndash; Target &ndash;&gt;
-                    <span id="reference-{$article->id_final_article}">
-                    <p class="c-nonmargin">
-                        {$article->details}
-                        {if $article->doi}DOI:&nbsp;{$article->doi|doi}.{/if}
-                    </p>
-                </span>
-                    {/if}-->
-
-                    <p class="c-nonmargin">
+                        <!--{$article->details}-->
+                        <!--{if $article->doi}DOI:&nbsp;{$article->doi|doi}.{/if}-->
                         Asante, S. B., Osei-Asare, Y. B. and Kuwornu, J. K. M. (2016) "Smallholder maize farmers' food
                         consumption expenditures in Ghana: The mediating role of commercialization", AGRIS on-line Papers in
                         Economics and Informatics, Vol. 8, No. 3, pp. 13-27. ISSN 1804-1930, DOI 10.7160/aol.2016.080302.
                     </p>
+                </span>
+                    <!--{/if}-->
+
                 </div>
                 <div class="c-article__pdf">
                     <p class="c-article__pdf-p c-nonmargin">
                         <a class="c-article__pdf-a" href="#">
                             <!--<img src="img/pdf.png" alt="pdf"/>-->
                             <i class="far fa-file-pdf c-article__pdf-icon"></i>
-                            FULL ISSUE (.PDF, XXX MB)
+                            FULL PAPER (.PDF, XXX MB)
                         </a>
                     </p>
                 </div>
@@ -368,7 +367,7 @@
                     <p class="c-article__pdf-p c-nonmargin">
                         <a class="c-article__pdf-a" href="#">
                             <i class="far fa-file-pdf c-article__pdf-icon"></i>
-                            FULL ISSUE (.PDF, 8,4 MB)
+                            FULL PAPER (.PDF, XXX MB)
                         </a>
                     </p>
                 </div>
@@ -414,7 +413,7 @@
                     <p class="c-article__pdf-p c-nonmargin">
                         <a class="c-article__pdf-a" href="#">
                             <i class="far fa-file-pdf c-article__pdf-icon"></i>
-                            FULL ISSUE (.PDF, 8,4 MB)
+                            FULL PAPER (.PDF, XXX MB)
                         </a>
                     </p>
                 </div>
