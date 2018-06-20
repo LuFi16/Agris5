@@ -2875,7 +2875,8 @@ table {
   align-items: center; }
 
 .c-first__text {
-  padding-left: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   font-size: 1.2rem; }
 
 .c-article__heading-color {
@@ -3027,9 +3028,8 @@ table {
   margin: 1rem; }
 
 .c-footer__img {
-  max-width: 100%;
-  height: auto;
-  max-height: 4rem; }
+  max-height: 4rem;
+  max-width: 20rem; }
 
 .c-footer__img-point {
   /*max-width: 100%;
@@ -3128,7 +3128,9 @@ table {
   padding: 0; }
 
 .c-main__header {
-  background: url("../img/pozadi.jpg") grey;
+  background: url("../img/uvodni3.png") grey;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 2rem;
   border-top: 1px solid #038000; }
 

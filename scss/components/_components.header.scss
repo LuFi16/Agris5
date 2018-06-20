@@ -3,7 +3,10 @@
   padding: 0;
 }
 .c-main__header{
-  background: url("../img/pozadi.jpg") $color-introduction-back;
+  background: url("../img/uvodni3.png") $color-introduction-back;
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
+  background-position: center;
   padding-top: 2rem;
   border-top: 1px solid $color-agris-green;
 }
